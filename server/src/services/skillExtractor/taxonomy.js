@@ -71,21 +71,30 @@ const SKILL_TAXONOMY = {
     { name: 'Scikit-Learn', aliases: ['sklearn'] },
     { name: 'Pandas', aliases: ['numpy', 'data analysis'] },
   ],
-  'Testing & Quality': [
-    { name: 'Jest', aliases: ['vitest'] },
-    { name: 'Cypress', aliases: ['cypress.io'] },
-    { name: 'Playwright', aliases: [] },
-    { name: 'Unit Testing', aliases: ['tdd', 'test driven development'] },
-    { name: 'Integration Testing', aliases: [] },
-    { name: 'Postman', aliases: ['api testing'] },
+  'Mobile Development': [
+    { name: 'React Native', aliases: ['rn', 'expo'] },
+    { name: 'Flutter', aliases: ['dart', 'flutter framework'] },
+    { name: 'Swift', aliases: ['ios', 'swiftui', 'xcode'] },
+    { name: 'Kotlin', aliases: ['android', 'jetpack compose', 'android studio'] },
+    { name: 'Mobile UI', aliases: ['responsive mobile', 'pwa', 'progressive web apps'] },
   ],
-  'Design & Product': [
+  'Security & DevSecOps': [
+    { name: 'Cybersecurity', aliases: ['infosec', 'information security', 'network security'] },
+    { name: 'OAuth 2.0', aliases: ['oauth', 'oidc', 'openid connect', 'sso'] },
+    { name: 'JWT', aliases: ['json web tokens', 'auth tokens'] },
+    { name: 'Penetration Testing', aliases: ['pen testing', 'ethical hacking', 'vulnerability assessment'] },
+    { name: 'OWASP', aliases: ['owasp top 10', 'security compliance'] },
+    { name: 'IAM', aliases: ['identity access management', 'role based access control', 'rbac'] },
+    { name: 'Cryptography', aliases: ['encryption', 'ssl', 'tls', 'aes', 'rsa'] },
+  ],
+  'Design & Architecture': [
     { name: 'Figma', aliases: ['figma design', 'figjam'] },
     { name: 'Design Systems', aliases: ['component library', 'storybook'] },
     { name: 'Wireframing', aliases: ['prototyping', 'user flows'] },
     { name: 'User Research', aliases: ['usability testing', 'ux research'] },
-    { name: 'Agile / Scrum', aliases: ['scrum', 'kanban', 'sprint planning', 'jira'] },
     { name: 'System Architecture', aliases: ['system design', 'high level design', 'hld', 'lld'] },
+    { name: 'Agile / Scrum', aliases: ['scrum', 'kanban', 'sprint planning', 'jira'] },
+    { name: 'Unit Testing', aliases: ['jest', 'vitest', 'cypress', 'tdd', 'test driven development'] },
   ]
 };
 
