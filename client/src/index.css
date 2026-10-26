@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: #F7F7F4;
+    --color-ink: #171A21;
+    --color-forest: #176B52;
+    --color-sage: #E8F0EA;
+    --color-amber: #D97706;
+    --color-border: #E2E4DE;
+  }
+
+  body {
+    background-color: #F7F7F4;
+    color: #171A21;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Newsreader', 'Georgia', serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbars matching the warm minimalist aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8DBD2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BDC2B5;
+}
+
+/* Glass & elevated surfaces with restrained shadows */
+.surface-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E4DE;
+  box-shadow: 0 1px 3px 0 rgba(23, 26, 33, 0.03);
+}
+
+.surface-sage {
+  background-color: #E8F0EA;
+  border: 1px solid #D5E2D8;
+}
+
+/* Subtle badge styles */
+.badge-forest {
+  background-color: #F0F7F4;
+  color: #176B52;
+  border: 1px solid #BDDFD2;
+}
+
+.badge-amber {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.badge-ink {
+  background-color: #F1F2F0;
+  color: #171A21;
+  border: 1px solid #E2E4DE;
+}

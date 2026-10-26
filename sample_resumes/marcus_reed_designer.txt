@@ -1,0 +1,28 @@
+MARCUS REED
+Email: marcus.reed.design@creativestudio.io
+Phone: +1 (512) 430-8821
+Location: Austin, TX
+Portfolio: https://marcusreed.design
+LinkedIn: https://linkedin.com/in/marcusreed-ux
+
+SUMMARY
+Lead Product Designer with 6+ years of experience crafting enterprise B2B SaaS interfaces and multi-brand design systems. Deep expertise in Figma, User Research, Wireframing, and Prototyping.
+
+TECHNICAL SKILLS & COMPETENCIES
+- Design & Prototyping: Figma, Design Systems, Wireframing, Prototyping, Storybook
+- Research & Strategy: User Research, Usability Testing, Information Architecture
+- Frontend Collaboration: Tailwind CSS, HTML5, CSS3
+
+EXPERIENCE
+Lead Product Designer | OmniSaaS Platform (2020 - Present)
+- Designed and documented an enterprise design system in Figma used by 50+ engineers and product squads.
+- Conducted 75+ generative user research interviews and usability sessions.
+- Redesigned core recruitment workflows, increasing onboarding completion by 31%.
+
+Senior UI/UX Designer | Vertex Interactive (2018 - 2020)
+- Designed high-fidelity prototypes and responsive web applications in Figma.
+- Created component libraries with Tailwind CSS and CSS3 tokens.
+
+EDUCATION
+Bachelor of Fine Arts in Interaction Design
+University of Texas at Austin (2014 - 2018)

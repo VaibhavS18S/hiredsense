@@ -1,0 +1,26 @@
+{
+  "name": "hiresense-ai",
+  "version": "1.0.0",
+  "description": "HireSense AI — Enterprise Talent Acquisition & Resume Intelligence Platform",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && npm test",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "recruitment",
+    "talent-acquisition",
+    "resume-screening",
+    "explainable-ai",
+    "kanban-pipeline",
+    "candidate-intelligence"
+  ],
+  "author": "HireSense AI Product Team",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-git": "^1.44.4"
+  }
+}

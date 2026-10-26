@@ -1,0 +1,27 @@
+{
+  "name": "hiresense-ai-server",
+  "version": "1.0.0",
+  "description": "HireSense AI - Enterprise Talent Acquisition & Resume Intelligence Platform API",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "seed": "node src/utils/seedData.js",
+    "test": "node tests/runTests.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.8.0",
+    "mongodb-memory-server": "^9.4.0",
+    "mongoose": "^8.5.2",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.23.8"
+  }
+}

@@ -1,0 +1,36 @@
+SARAH JENKINS
+Email: sarah.jenkins.cloud@opsnet.com
+Phone: +1 (206) 412-9033
+Location: Seattle, WA
+LinkedIn: https://linkedin.com/in/sarahjenkins-cloud
+GitHub: https://github.com/sjenkins-infra
+
+PROFESSIONAL SUMMARY
+Lead Cloud Infrastructure Architect with 8 years of deep expertise in Kubernetes, Terraform, Docker, and AWS ecosystem. Proven track record establishing multi-region zero-downtime infrastructure, automated CI/CD deployment pipelines, and enterprise telemetry with Prometheus & Grafana.
+
+CORE TECHNICAL SKILLS
+- Cloud Platforms: AWS (EKS, VPC, CloudFront, Route53, RDS, IAM), Google Cloud (GCP)
+- Infrastructure as Code: Terraform, Terragrunt, CloudFormation
+- Container Orchestration: Kubernetes, Docker, Helm, Docker Compose
+- CI/CD & Automation: GitHub Actions, GitLab CI, Linux, Bash Scripting, Python
+- Observability: Prometheus, Grafana, Datadog, CloudWatch
+
+PROFESSIONAL EXPERIENCE
+Lead DevOps & Infrastructure Engineer | Stratosphere Networks (2020 - Present)
+- Designed and maintained multi-region AWS cloud infrastructure using Terraform, managing 35+ production Kubernetes clusters.
+- Implemented GitOps continuous deployment pipelines with GitHub Actions, reducing deployment failure rates to under 0.2%.
+- Enforced zero-trust networking policies and cluster security benchmarks across Linux and Docker workloads.
+- Decreased monthly cloud compute spend by 32% using spot instances and automated HPA pod autoscaling.
+
+Senior Cloud Engineer | Matrix Software Labs (2016 - 2020)
+- Automated infrastructure provisioning on AWS using Terraform and Docker.
+- Administered Linux servers, Nginx reverse proxies, and centralized logging clusters.
+- Configured real-time system alerts and SLO/SLA dashboards in Grafana and Prometheus.
+
+EDUCATION
+Master of Science in Computer Engineering
+University of Washington (2014 - 2016)
+
+CERTIFICATIONS
+- Certified Kubernetes Administrator (CKA)
+- AWS Certified Solutions Architect - Professional

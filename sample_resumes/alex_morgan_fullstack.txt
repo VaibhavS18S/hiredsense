@@ -1,0 +1,36 @@
+ALEX MORGAN
+Email: alex.morgan.dev@vanguardpool.io
+Phone: +1 (415) 672-8819
+Location: San Francisco, CA
+LinkedIn: https://linkedin.com/in/alex-morgan-fullstack
+GitHub: https://github.com/alexmorgan-dev
+
+PROFESSIONAL SUMMARY
+Senior Full-Stack Engineer with 6+ years of experience designing and scaling distributed web applications and cloud microservices. Proven expertise in React, TypeScript, Node.js, and PostgreSQL. Passionate about clean architecture, sub-100ms API response times, and automated CI/CD workflows.
+
+TECHNICAL COMPETENCIES
+- Frontend: React, TypeScript, Next.js, Redux, Tailwind CSS, HTML5, CSS3, WebSockets
+- Backend: Node.js, Express.js, GraphQL, REST APIs, Microservices, Python
+- Database & Storage: PostgreSQL, Redis, MongoDB, SQL
+- Cloud & DevOps: Docker, AWS (ECS, S3, RDS), Kubernetes, CI/CD (GitHub Actions)
+- Testing: Jest, Vitest, Cypress, Unit Testing
+
+WORK EXPERIENCE
+Lead Full-Stack Engineer | Apex Cloud Solutions (2021 - Present)
+- Architected and delivered high-throughput React and Node.js microservices serving 250,000 daily active enterprise users.
+- Re-architected relational database schema in PostgreSQL, reducing complex query latencies by 42%.
+- Integrated Redis caching layer and GraphQL endpoints, improving dashboard load times.
+- Spearheaded migration of legacy services to Docker containers orchestrated on AWS ECS.
+
+Senior Software Engineer | Kinetic Fintech (2018 - 2021)
+- Developed responsive customer dashboard in React and TypeScript backed by Node.js REST APIs.
+- Built automated database migrations and integration test suites using Jest and PostgreSQL.
+- Collaborated with product designers to implement reusable design systems using Tailwind CSS.
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Davis (2014 - 2018)
+GPA: 3.8 / 4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
