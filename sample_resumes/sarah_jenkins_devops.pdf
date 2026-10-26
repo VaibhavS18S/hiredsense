@@ -1,0 +1,314 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Length 5063 >>
+stream
+BT
+/F2 20 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 780.00 Tm
+(SARAH JENKINS) Tj
+ET
+BT
+/F2 11 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 764.00 Tm
+(Lead Cloud Infrastructure Architect) Tj
+ET
+BT
+/F1 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 45.00 750.00 Tm
+(Email: sarah.jenkins.cloud@opsnet.com | Phone: +1 \(206\) 412-9033 | Location: Seattle, WA | GitHub: sjenkins-infra) Tj
+ET
+1.5 w
+0.090 0.420 0.322 RG
+45.00 742.00 m
+550.00 742.00 l
+S
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 724.00 Tm
+(PROFESSIONAL SUMMARY) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 710.00 Tm
+(Lead Cloud Infrastructure Architect with 8 years of deep expertise in Kubernetes,) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 698.00 Tm
+(Terraform, Docker, and AWS ecosystem. Proven track record establishing multi-region) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 686.00 Tm
+(zero-downtime infrastructure, automated CI/CD deployment pipelines, and enterprise) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 674.00 Tm
+(telemetry with Prometheus & Grafana.) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 652.00 Tm
+(TECHNICAL COMPETENCIES & SKILLS) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 640.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 638.00 Tm
+(Cloud Platforms: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 139.00 638.00 Tm
+(AWS \(EKS, VPC, CloudFront, Route53, RDS, IAM\), Google Cloud \(GCP\)) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 627.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 625.00 Tm
+(IaC & Automation: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 144.20 625.00 Tm
+(Terraform, Terragrunt, CloudFormation, Ansible, Bash, Python) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 614.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 612.00 Tm
+(Containers: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 113.00 612.00 Tm
+(Kubernetes, Docker, Helm, Docker Compose, Linux) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 601.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 599.00 Tm
+(Observability: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 128.60 599.00 Tm
+(Prometheus, Grafana, Datadog, CloudWatch) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 576.00 Tm
+(WORK EXPERIENCE) Tj
+ET
+BT
+/F2 9 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 562.00 Tm
+(Lead DevOps & Infrastructure Engineer | Stratosphere Networks) Tj
+ET
+BT
+/F2 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 470.00 562.00 Tm
+(2020 - Present) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 552.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 550.00 Tm
+(Designed and maintained multi-region AWS cloud infrastructure using Terraform, managing) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 539.00 Tm
+(35+ production Kubernetes clusters.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 528.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 526.00 Tm
+(Implemented GitOps continuous deployment pipelines with GitHub Actions, reducing) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 515.00 Tm
+(deployment failure rates to under 0.2%.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 504.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 502.00 Tm
+(Enforced zero-trust networking policies and cluster security benchmarks across Linux and) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 491.00 Tm
+(Docker workloads.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 480.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 478.00 Tm
+(Decreased monthly cloud compute spend by 32% using spot instances and automated HPA pod) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 467.00 Tm
+(autoscaling.) Tj
+ET
+BT
+/F2 9 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 448.00 Tm
+(Senior Cloud Engineer | Matrix Software Labs) Tj
+ET
+BT
+/F2 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 470.00 448.00 Tm
+(2016 - 2020) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 438.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 436.00 Tm
+(Automated infrastructure provisioning on AWS using Terraform and Docker.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 425.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 423.00 Tm
+(Administered Linux servers, Nginx reverse proxies, and centralized logging clusters.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 412.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 410.00 Tm
+(Configured real-time system alerts and SLO/SLA dashboards in Grafana and Prometheus.) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 391.00 Tm
+(EDUCATION) Tj
+ET
+BT
+/F2 8.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 377.00 Tm
+(Master of Science in Computer Engineering) Tj
+ET
+BT
+/F1 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 470.00 377.00 Tm
+(2014 - 2016) Tj
+ET
+BT
+/F1 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 45.00 366.00 Tm
+(University of Washington) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 352.00 Tm
+(CERTIFICATIONS) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 338.00 Tm
+(• Certified Kubernetes Administrator \(CKA\)) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 327.00 Tm
+(• AWS Certified Solutions Architect - Professional) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+6 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000005333 00000 n 
+0000005475 00000 n 
+0000005532 00000 n 
+trailer
+<< /Size 7 /Root 6 0 R >>
+startxref
+5581
+%%EOF

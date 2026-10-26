@@ -1,0 +1,329 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Length 5217 >>
+stream
+BT
+/F2 20 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 780.00 Tm
+(ALEX MORGAN) Tj
+ET
+BT
+/F2 11 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 764.00 Tm
+(Senior Full-Stack Engineer) Tj
+ET
+BT
+/F1 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 45.00 750.00 Tm
+(Email: alex.morgan.dev@vanguardpool.io | Phone: +1 \(415\) 672-8819 | Location: San Francisco, CA | GitHub: alexmorgan-dev) Tj
+ET
+1.5 w
+0.090 0.420 0.322 RG
+45.00 742.00 m
+550.00 742.00 l
+S
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 724.00 Tm
+(PROFESSIONAL SUMMARY) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 710.00 Tm
+(Senior Full-Stack Engineer with 6+ years of experience designing and scaling distributed) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 698.00 Tm
+(web applications and cloud microservices. Proven expertise in React, TypeScript, Node.js,) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 686.00 Tm
+(and PostgreSQL. Passionate about clean architecture, sub-100ms API response times, and) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 674.00 Tm
+(automated CI/CD workflows.) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 652.00 Tm
+(TECHNICAL COMPETENCIES & SKILLS) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 640.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 638.00 Tm
+(Frontend: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 102.60 638.00 Tm
+(React, TypeScript, Next.js, Redux, Tailwind CSS, HTML5, CSS3, WebSockets) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 627.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 625.00 Tm
+(Backend: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 97.40 625.00 Tm
+(Node.js, Express.js, GraphQL, REST APIs, Microservices, Python) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 614.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 612.00 Tm
+(Database: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 102.60 612.00 Tm
+(PostgreSQL, Redis, MongoDB, SQL) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 601.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 599.00 Tm
+(Cloud & DevOps: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 133.80 599.00 Tm
+(Docker, AWS \(ECS, S3, RDS\), Kubernetes, CI/CD \(GitHub Actions\)) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 588.00 3.00 3.00 re
+f
+BT
+/F2 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 56.00 586.00 Tm
+(Testing: ) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 97.40 586.00 Tm
+(Jest, Vitest, Cypress, Unit Testing) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 563.00 Tm
+(WORK EXPERIENCE) Tj
+ET
+BT
+/F2 9 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 549.00 Tm
+(Lead Full-Stack Engineer | Apex Cloud Solutions) Tj
+ET
+BT
+/F2 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 470.00 549.00 Tm
+(2021 - Present) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 539.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 537.00 Tm
+(Architected and delivered high-throughput React and Node.js microservices serving 250,000) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 526.00 Tm
+(daily active enterprise users.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 515.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 513.00 Tm
+(Re-architected relational database schema in PostgreSQL, reducing complex query latencies) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 502.00 Tm
+(by 42%.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 491.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 489.00 Tm
+(Integrated Redis caching layer and GraphQL endpoints, improving dashboard load times.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 478.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 476.00 Tm
+(Spearheaded migration of legacy services to Docker containers orchestrated on AWS ECS.) Tj
+ET
+BT
+/F2 9 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 457.00 Tm
+(Senior Software Engineer | Kinetic Fintech) Tj
+ET
+BT
+/F2 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 470.00 457.00 Tm
+(2018 - 2021) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 447.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 445.00 Tm
+(Developed responsive customer dashboard in React and TypeScript backed by Node.js REST) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 434.00 Tm
+(APIs.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 423.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 421.00 Tm
+(Built automated database migrations and integration test suites using Jest and) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 410.00 Tm
+(PostgreSQL.) Tj
+ET
+0.380 0.404 0.451 rg
+48.00 399.00 3.00 3.00 re
+f
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 397.00 Tm
+(Collaborated with product designers to implement reusable design systems using Tailwind) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 386.00 Tm
+(CSS.) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 367.00 Tm
+(EDUCATION) Tj
+ET
+BT
+/F2 8.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 353.00 Tm
+(Bachelor of Science in Computer Science \(GPA: 3.8/4.0\)) Tj
+ET
+BT
+/F1 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 470.00 353.00 Tm
+(2014 - 2018) Tj
+ET
+BT
+/F1 8 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 45.00 342.00 Tm
+(University of California, Davis) Tj
+ET
+BT
+/F2 10 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 328.00 Tm
+(CERTIFICATIONS) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 314.00 Tm
+(• AWS Certified Solutions Architect - Associate) Tj
+ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+6 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000005487 00000 n 
+0000005629 00000 n 
+0000005686 00000 n 
+trailer
+<< /Size 7 /Root 6 0 R >>
+startxref
+5735
+%%EOF
