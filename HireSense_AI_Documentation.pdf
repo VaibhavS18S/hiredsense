@@ -1,0 +1,1312 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 5575 >>
+stream
+0.910 0.941 0.918 rg
+45.00 770.00 505.00 34.00 re
+f
+1 w
+0.820 0.867 0.831 RG
+45.00 770.00 505.00 34.00 re
+S
+BT
+/F2 8.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 56.00 786.00 Tm
+(HIRESENSE AI  |  TALENT INTELLIGENCE PLATFORM) Tj
+ET
+BT
+/F1 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 410.00 786.00 Tm
+(CONFIDENTIAL & PROPRIETARY) Tj
+ET
+0.910 0.941 0.918 rg
+45.00 735.00 160.00 18.00 re
+f
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 53.00 740.00 Tm
+(OFFICIAL PRODUCT DOSSIER) Tj
+ET
+BT
+/F2 24 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 705.00 Tm
+(HireSense AI Platform Dossier) Tj
+ET
+BT
+/F1 10.5 Tf
+0.333 0.357 0.400 rg
+1 0 0 1 45.00 685.00 Tm
+(AI-Powered Resume Intelligence, Explainable Matching & Talent Acquisition SaaS) Tj
+ET
+0.969 0.969 0.957 rg
+1 w
+0.886 0.894 0.871 RG
+45.00 648.00 505.00 36.00 re
+B
+BT
+/F2 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 55.00 670.00 Tm
+(VERSION: v1.0.0 Production) Tj
+ET
+BT
+/F1 8 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 55.00 656.00 Tm
+(TECH STACK: MERN + Pluggable XAI) Tj
+ET
+BT
+/F2 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 230.00 670.00 Tm
+(REPO: github.com/VaibhavS18S/hiredsense) Tj
+ET
+BT
+/F1 8 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 230.00 656.00 Tm
+(BRANCH: main \(Synced\)) Tj
+ET
+BT
+/F2 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 400.00 670.00 Tm
+(TEST SUITE: 5/5 PASSED \(100%\)) Tj
+ET
+BT
+/F2 8 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 400.00 656.00 Tm
+(STATUS: Production Ready) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 605.00 Tm
+(1. Executive Overview & Problem Statement) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 600.00 m
+550.00 600.00 l
+S
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 585.00 Tm
+(HireSense AI is a full-stack, enterprise-style talent acquisition platform built using the) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 572.00 Tm
+(MERN stack \(MongoDB, Express, React, Node.js\) combined with Explainable AI \(XAI\) and natural) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 559.00 Tm
+(language processing. The product addresses fundamental failures in modern recruitment) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 546.00 Tm
+(software: black-box algorithms, opaque rejection criteria, and keyword-stuffing exploits.) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 529.00 Tm
+(Unlike generic ATS tools that act as silent gatekeepers, HireSense AI maintains a strict) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 516.00 Tm
+(Human-in-the-Loop policy. The platform calculates match scores from verifiable evidence,) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 503.00 Tm
+(extracts direct textual citations from resumes, highlights candidate skill gaps, and equips) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 490.00 Tm
+(hiring teams with side-by-side comparisons, Kanban pipelines, and interview rubrics.) Tj
+ET
+0.969 0.969 0.957 rg
+1 w
+0.886 0.894 0.871 RG
+45.00 443.00 505.00 44.00 re
+B
+0.090 0.420 0.322 rg
+45.00 443.00 4.00 44.00 re
+f
+BT
+/F2 9 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 56.00 473.00 Tm
+(Design Philosophy: Distinctive Editorial Aesthetics) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 459.00 Tm
+(Designed with a warm off-white canvas \(#F7F7F4\), deep obsidian ink typography \(#171A21\), dark forest-green accents \(#176B52\), and sage surfaces \(#E8F0EA\), deliberately rejecting generic neon purple gradients and hollow glassmorphism.) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 411.00 Tm
+(2. End-to-End Recruitment Workflow \(6-Stage Pipeline\)) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 406.00 m
+550.00 406.00 l
+S
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 391.00 Tm
+(The platform organizes candidate screening into a structured, automated six-stage lifecycle:) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 376.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 374.00 Tm
+(1. Upload & Ingestion: Batch upload supporting PDF, DOCX, and TXT files with SHA-256) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 362.00 Tm
+(duplicate detection.) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 350.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 348.00 Tm
+(2. Text Extraction: Robust streaming extraction via pdf-parse and mammoth, isolating) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 336.00 Tm
+(header, body, and contact.) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 324.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 322.00 Tm
+(3. Information Parsing: Determines tenure dates, educational credentials, phone) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 310.00 Tm
+(numbers, emails, and links.) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 298.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 296.00 Tm
+(4. Taxonomy Mapping: Extracts skills across 8 technical domains using a 500+ term) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 284.00 Tm
+(regex boundary engine.) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 272.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 270.00 Tm
+(5. XAI Scoring Engine: Calculates 4-part weighted score with verbatim textual) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 258.00 Tm
+(citations for every matched requirement.) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 246.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 244.00 Tm
+(6. Recruiter Review: Enables human verification, manual score adjustments, notes, and) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 232.00 Tm
+(pipeline stage movement.) Tj
+ET
+BT
+/F1 7.5 Tf
+0.55 0.57 0.60 rg
+1 0 0 1 45 35 Tm
+(HireSense AI Platform Dossier - github.com/VaibhavS18S/hiredsense) Tj
+1 0 0 1 480 35 Tm
+(Page 1 of 4) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Length 6070 >>
+stream
+0.910 0.941 0.918 rg
+45.00 770.00 505.00 34.00 re
+f
+1 w
+0.820 0.867 0.831 RG
+45.00 770.00 505.00 34.00 re
+S
+BT
+/F2 8.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 56.00 786.00 Tm
+(HIRESENSE AI  |  TALENT INTELLIGENCE PLATFORM) Tj
+ET
+BT
+/F1 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 410.00 786.00 Tm
+(CONFIDENTIAL & PROPRIETARY) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 725.00 Tm
+(3. Core Application Modules \(Detailed Feature Breakdown\)) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 720.00 m
+550.00 720.00 l
+S
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 705.00 Tm
+(Module A: Executive Recruitment Dashboard) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 690.00 Tm
+(The central command center provides real-time recruitment KPIs calculated directly from) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 677.00 Tm
+(persistent database records: Active Job Openings, Total Candidates Processed, Review) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 664.00 Tm
+(Backlog, Shortlist Conversion Rate, Average Time-to-Shortlist, and historical screening) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 651.00 Tm
+(volume trends visualized with interactive Recharts area graphs.) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 634.00 Tm
+(Module B: Job Intelligence & Readiness Analyzer) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 619.00 Tm
+(Allows hiring teams to create, edit, duplicate, and analyze job descriptions. Includes an) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 606.00 Tm
+(automated 0-100% Job Readiness Score that evaluates criteria clarity, role responsibilities,) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 593.00 Tm
+(and mandatory competencies before publishing. A built-in Buzzword Detector flags) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 580.00 Tm
+(non-informative clichés \(e.g., "rockstar", "ninja", "guru"\) and suggests concrete competency) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 567.00 Tm
+(definitions. Recruiters can also click "AI Enhance" to generate structured job criteria.) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 550.00 Tm
+(Module C: Smart Resume Processing Center) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 535.00 Tm
+(Equipped with a bulk drag-and-drop interface supporting PDF and DOCX documents up to 15MB.) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 522.00 Tm
+(Calculates SHA-256 fingerprints to prevent duplicate processing, shows real-time multi-stage) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 509.00 Tm
+(progress bars, and alerts recruiters if a scanned document or corrupt file requires optical) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 496.00 Tm
+(character recognition.) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 479.00 Tm
+(Module D: Explainable AI Matching Engine & Evidence Extraction) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 464.00 Tm
+(Eliminates guesswork by decomposing candidate-job alignment into four normalized, auditable) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 451.00 Tm
+(components with configurable administrative weights:) Tj
+ET
+0.910 0.941 0.918 rg
+1 w
+0.820 0.867 0.831 RG
+45.00 428.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 51.00 432.00 Tm
+(Scoring Dimension) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 171.00 432.00 Tm
+(Default Weight) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 251.00 432.00 Tm
+(Measurement Method) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 401.00 432.00 Tm
+(Evidence Provided) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 410.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 414.00 Tm
+(Skill Alignment) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 414.00 Tm
+(40%) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 251.00 414.00 Tm
+(Mandatory \(85% base\) + Preferre...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 401.00 414.00 Tm
+(Verbatim resume quotes & citations) Tj
+ET
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 392.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 396.00 Tm
+(Semantic Fit) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 396.00 Tm
+(30%) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 251.00 396.00 Tm
+(Vector cosine similarity \(TF-ID...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 401.00 396.00 Tm
+(Distance score & semantic corre...) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 374.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 378.00 Tm
+(Relevant Experience) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 378.00 Tm
+(20%) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 251.00 378.00 Tm
+(Parsed employment years vs thre...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 401.00 378.00 Tm
+(Timeline verification & job tenure) Tj
+ET
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 356.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 360.00 Tm
+(Qualifications) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 360.00 Tm
+(10%) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 251.00 360.00 Tm
+(Degree hierarchy \(BS, MS, PhD\) ...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 401.00 360.00 Tm
+(Degree level, major & institution) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 334.00 Tm
+(Module E: Side-by-Side Candidate Comparison Studio) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 319.00 Tm
+(Enables recruiters to select between 2 and 4 applicants and view them in a synchronized) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 306.00 Tm
+(matrix comparing match score breakdowns, skill coverage, total experience, educational) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 293.00 Tm
+(credentials, and missing prerequisites to facilitate balanced hiring discussions.) Tj
+ET
+BT
+/F1 7.5 Tf
+0.55 0.57 0.60 rg
+1 0 0 1 45 35 Tm
+(HireSense AI Platform Dossier - github.com/VaibhavS18S/hiredsense) Tj
+1 0 0 1 480 35 Tm
+(Page 2 of 4) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 5656 >>
+stream
+0.910 0.941 0.918 rg
+45.00 770.00 505.00 34.00 re
+f
+1 w
+0.820 0.867 0.831 RG
+45.00 770.00 505.00 34.00 re
+S
+BT
+/F2 8.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 56.00 786.00 Tm
+(HIRESENSE AI  |  TALENT INTELLIGENCE PLATFORM) Tj
+ET
+BT
+/F1 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 410.00 786.00 Tm
+(CONFIDENTIAL & PROPRIETARY) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 735.00 Tm
+(Module F: 7-Stage Drag-and-Drop Recruitment Kanban Board) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 720.00 Tm
+(Organizes applicants across 7 pipeline columns: New -> Screening -> Shortlisted -> Interview) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 707.00 Tm
+(-> Offer -> Hired -> Rejected. Features smooth HTML5 drag-and-drop, multi-candidate bulk) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 694.00 Tm
+(actions, candidate counts by stage, stage duration metrics, and an instantaneous Undo button) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 681.00 Tm
+(to reverse accidental transitions.) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 664.00 Tm
+(Module G: Talent Pool & Faceted Search) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 649.00 Tm
+(Enables recruitment teams to search historical applicants across all past postings using) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 636.00 Tm
+(full-text keyword indexing, minimum experience sliders, categorized skill pills, and saved) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 623.00 Tm
+(search query presets.) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 606.00 Tm
+(Module H: Gap-Targeted Interview Intelligence) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 591.00 Tm
+(Analyzes missing mandatory skills and weak competency areas for shortlisted candidates,) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 578.00 Tm
+(dynamically generating tailored technical and behavioral interview questions. Interviewers) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 565.00 Tm
+(can grade candidates using a standardized 1-5 evaluation rubric \(Technical Competency,) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 552.00 Tm
+(Problem Solving, Communication, and Team Fit\).) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 535.00 Tm
+(Module I: Reports, Analytics & CSV Export) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 520.00 Tm
+(Generates recruitment funnel conversion charts, skill distribution graphs across candidate) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 507.00 Tm
+(pools, and exports filtered candidate rankings to standardized CSV spreadsheets.) Tj
+ET
+BT
+/F2 10.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 45.00 490.00 Tm
+(Module J: Privacy, GDPR & Blind Screening) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 475.00 Tm
+(Features an unconscious-bias toggle \("Blind Screening"\) that hides candidate names, photos,) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 462.00 Tm
+(emails, phone numbers, and gender markers during initial screening. Includes automated data) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 449.00 Tm
+(retention rules \(90/180/365 days\) and GDPR Right-to-be-Forgotten candidate record purging.) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 422.00 Tm
+(4. Technical Architecture & Zero-Dependency Design) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 417.00 m
+550.00 417.00 l
+S
+0.910 0.941 0.918 rg
+1 w
+0.820 0.867 0.831 RG
+45.00 396.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 51.00 400.00 Tm
+(Layer) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 151.00 400.00 Tm
+(Technologies) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 336.00 400.00 Tm
+(Purpose & Resilience) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 378.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 382.00 Tm
+(Frontend) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 151.00 382.00 Tm
+(React 18, Vite, Tailwind CSS, R...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 336.00 382.00 Tm
+(20 client routes, responsive ed...) Tj
+ET
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 360.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 364.00 Tm
+(Backend API) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 151.00 364.00 Tm
+(Node.js v20, Express.js, Multer) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 336.00 364.00 Tm
+(12 REST controllers, cookie ses...) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 342.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 346.00 Tm
+(Database) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 151.00 346.00 Tm
+(MongoDB Atlas + MongoMemoryServer) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 336.00 346.00 Tm
+(Dual-mode: cloud cluster or loc...) Tj
+ET
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 324.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 328.00 Tm
+(AI Engine) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 151.00 328.00 Tm
+(Pluggable: Hugging Face / Local...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 336.00 328.00 Tm
+(Sentence vector cosine similari...) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 306.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 310.00 Tm
+(Validation) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 151.00 310.00 Tm
+(Zod, bcryptjs, SHA-256 Crypto) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 336.00 310.00 Tm
+(Payload validation, password ha...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.55 0.57 0.60 rg
+1 0 0 1 45 35 Tm
+(HireSense AI Platform Dossier - github.com/VaibhavS18S/hiredsense) Tj
+1 0 0 1 480 35 Tm
+(Page 3 of 4) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 5848 >>
+stream
+0.910 0.941 0.918 rg
+45.00 770.00 505.00 34.00 re
+f
+1 w
+0.820 0.867 0.831 RG
+45.00 770.00 505.00 34.00 re
+S
+BT
+/F2 8.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 56.00 786.00 Tm
+(HIRESENSE AI  |  TALENT INTELLIGENCE PLATFORM) Tj
+ET
+BT
+/F1 7.5 Tf
+0.380 0.404 0.451 rg
+1 0 0 1 410.00 786.00 Tm
+(CONFIDENTIAL & PROPRIETARY) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 725.00 Tm
+(5. Verification Test Suite Results) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 720.00 m
+550.00 720.00 l
+S
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 705.00 Tm
+(The automated backend test suite \(server/tests/runTests.js\) asserts core algorithmic) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 692.00 Tm
+(correctness across 5 test suites:) Tj
+ET
+0.910 0.941 0.918 rg
+1 w
+0.820 0.867 0.831 RG
+45.00 669.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 51.00 673.00 Tm
+(Test Suite) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 171.00 673.00 Tm
+(Function Under Test) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 281.00 673.00 Tm
+(Specification) Tj
+ET
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 476.00 673.00 Tm
+(Status) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 651.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 655.00 Tm
+(SHA-256 Fingerprinting) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 655.00 Tm
+(calculateHash\(\)) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 281.00 655.00 Tm
+(Duplicate file detection & hash...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 476.00 655.00 Tm
+(100% PASSED) Tj
+ET
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 633.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 637.00 Tm
+(Skill Extractor) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 637.00 Tm
+(extractSkills\(\)) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 281.00 637.00 Tm
+(Boundary detection of C++, C#, ...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 476.00 637.00 Tm
+(100% PASSED) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 615.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 619.00 Tm
+(Explainable Matching) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 619.00 Tm
+(calculateMatchScore\(\)) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 281.00 619.00 Tm
+(4-component weighted formula & ...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 476.00 619.00 Tm
+(100% PASSED) Tj
+ET
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 597.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 601.00 Tm
+(Job Readiness Analyzer) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 601.00 Tm
+(analyzeJobDescription\(\)) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 281.00 601.00 Tm
+(Readiness score & buzzword iden...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 476.00 601.00 Tm
+(100% PASSED) Tj
+ET
+1.000 1.000 1.000 rg
+0.7 w
+0.886 0.894 0.871 RG
+45.00 579.00 505.00 18.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 51.00 583.00 Tm
+(Vector Cosine Engine) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 171.00 583.00 Tm
+(calculateCosineSimilarity\(\)) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 281.00 583.00 Tm
+(Semantic text vector distance c...) Tj
+ET
+BT
+/F1 7.5 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 476.00 583.00 Tm
+(100% PASSED) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 547.00 Tm
+(6. Quick-Start Execution Guide) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 542.00 m
+550.00 542.00 l
+S
+0.996 0.976 0.933 rg
+1 w
+0.886 0.894 0.871 RG
+45.00 497.00 505.00 44.00 re
+B
+0.851 0.467 0.024 rg
+45.00 497.00 4.00 44.00 re
+f
+BT
+/F2 9 Tf
+0.706 0.325 0.035 rg
+1 0 0 1 56.00 527.00 Tm
+(Pre-Seeded Recruiter Credentials) Tj
+ET
+BT
+/F1 8 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 56.00 513.00 Tm
+(URL: http://localhost:5173  |  Email: recruiter@hiresense.ai  |  Password: Password123!) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 475.00 Tm
+(Follow these commands to boot the complete application locally:) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 460.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 458.00 Tm
+(Start Backend API: cd c:\\HCL_TRAINING\\server && npm run dev \(Runs on port 5000\)) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 446.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 444.00 Tm
+(Start Frontend Client: cd c:\\HCL_TRAINING\\client && npm run dev \(Runs on port 5173\)) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 432.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 430.00 Tm
+(Run Automated Tests: cd c:\\HCL_TRAINING\\server && node tests/runTests.js) Tj
+ET
+BT
+/F2 13 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 45.00 406.00 Tm
+(7. Source Code & GitHub Repository) Tj
+ET
+1.5 w
+0.886 0.894 0.871 RG
+45.00 401.00 m
+550.00 401.00 l
+S
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 386.00 Tm
+(The entire source tree, frontend components, server controllers, seed data, sample resumes,) Tj
+ET
+BT
+/F1 9 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 45.00 373.00 Tm
+(and automated test suite have been initialized, committed, and pushed to GitHub:) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 358.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 356.00 Tm
+(Repository Link: https://github.com/VaibhavS18S/hiredsense.git) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 344.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 342.00 Tm
+(Active Branch: main) Tj
+ET
+0.090 0.420 0.322 rg
+48.00 330.00 4.00 4.00 re
+f
+BT
+/F2 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 328.00 Tm
+(Sample Resumes for Testing: Located in sample_resumes/ \(alex_morgan_fullstack.txt,) Tj
+ET
+BT
+/F1 8.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 58.00 316.00 Tm
+(sarah_jenkins_devops.txt, marcus_reed_designer.txt\)) Tj
+ET
+BT
+/F1 7.5 Tf
+0.55 0.57 0.60 rg
+1 0 0 1 45 35 Tm
+(HireSense AI Platform Dossier - github.com/VaibhavS18S/hiredsense) Tj
+1 0 0 1 480 35 Tm
+(Page 4 of 4) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 4 0 R >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 5 0 R >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 6 0 R >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 12 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R >> >> /Contents 7 0 R >>
+endobj
+12 0 obj
+<< /Type /Pages /Kids [8 0 R 9 0 R 10 0 R 11 0 R] /Count 4 >>
+endobj
+13 0 obj
+<< /Type /Catalog /Pages 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000000313 00000 n 
+0000005940 00000 n 
+0000012062 00000 n 
+0000017770 00000 n 
+0000023670 00000 n 
+0000023823 00000 n 
+0000023976 00000 n 
+0000024130 00000 n 
+0000024284 00000 n 
+0000024362 00000 n 
+trailer
+<< /Size 14 /Root 13 0 R >>
+startxref
+24413
+%%EOF
