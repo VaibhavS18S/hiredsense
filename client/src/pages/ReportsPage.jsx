@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   BarChart3,
   Download,
@@ -8,6 +9,9 @@ import {
   Briefcase,
   CheckCircle2,
   FileSpreadsheet,
+  AlertCircle,
+  RotateCcw,
+  Sparkles,
 } from 'lucide-react';
 import {
   BarChart,
@@ -26,6 +30,7 @@ export const ReportsPage = () => {
   const [jobs, setJobs] = useState([]);
   const [selectedJob, setSelectedJob] = useState('all');
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [downloadingCSV, setDownloadingCSV] = useState(false);
 
   useEffect(() => {
@@ -40,19 +45,25 @@ export const ReportsPage = () => {
     try {
       const res = await api.get('/jobs');
       if (res.success) setJobs(res.data || []);
-    } catch (e) {}
+    } catch (e) {
+      console.warn('Could not load jobs for dropdown filter:', e);
+    }
   };
 
   const fetchReports = async () => {
     setLoading(true);
+    setError(null);
     try {
       const query = selectedJob !== 'all' ? `?jobId=${selectedJob}` : '';
       const res = await api.get(`/reports/summary${query}`);
       if (res.success) {
         setData(res.data);
+      } else {
+        setError(res.message || 'Could not load recruitment analytics');
       }
     } catch (err) {
-      console.error(err);
+      console.error('Failed to fetch reports summary:', err);
+      setError(err.message || 'Failed to connect to the reports API. Ensure backend is running.');
     } finally {
       setLoading(false);
     }
@@ -123,171 +134,244 @@ export const ReportsPage = () => {
         </div>
       </div>
 
+      {/* Error Banner */}
+      {error && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex items-start justify-between gap-3 text-xs text-red-800">
+          <div className="flex items-start gap-2">
+            <AlertCircle className="w-4 h-4 text-red-600 mt-0.5 shrink-0" />
+            <div>
+              <p className="font-semibold text-red-900">Unable to load reports</p>
+              <p className="mt-0.5">{error}</p>
+            </div>
+          </div>
+          <button
+            onClick={fetchReports}
+            className="inline-flex items-center gap-1.5 px-3 py-1 bg-white border border-red-200 rounded-lg text-red-700 hover:bg-red-100 font-medium shrink-0 transition-colors"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>Retry</span>
+          </button>
+        </div>
+      )}
+
+      {/* Loading Skeleton */}
+      {loading && !data && (
+        <div className="space-y-6 animate-pulse">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="h-72 bg-sage-50/60 rounded-2xl border border-border/60" />
+            <div className="h-72 bg-sage-50/60 rounded-2xl border border-border/60" />
+          </div>
+          <div className="h-64 bg-sage-50/60 rounded-2xl border border-border/60" />
+        </div>
+      )}
+
       {/* Charts Section: Funnel & Skills Distribution */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Funnel Drop-off Bar Chart */}
-        <div className="surface-card rounded-2xl p-6">
-          <h3 className="font-editorial text-lg font-semibold text-ink mb-1">
-            Recruitment Funnel Velocity
-          </h3>
-          <p className="text-xs text-ink-muted mb-4">
-            Candidate distribution and conversion attrition from New intake to Hired.
-          </p>
+      {(!loading || data) && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Funnel Drop-off Bar Chart */}
+          <div className="surface-card rounded-2xl p-6 min-w-0">
+            <div className="flex items-center justify-between mb-1">
+              <h3 className="font-editorial text-lg font-semibold text-ink">
+                Recruitment Funnel Velocity
+              </h3>
+              <span className="text-[11px] font-mono text-forest-700 bg-forest-50 px-2 py-0.5 rounded-full font-medium">
+                {funnelData.reduce((acc, curr) => acc + (curr.count || 0), 0)} Total Applications
+              </span>
+            </div>
+            <p className="text-xs text-ink-muted mb-4">
+              Candidate distribution and conversion attrition from New intake to Hired.
+            </p>
 
-          <div className="h-64 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={funnelData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#EAECE5" vertical={false} />
-                <XAxis dataKey="stage" stroke="#8C92A0" fontSize={11} tickLine={false} />
-                <YAxis stroke="#8C92A0" fontSize={11} tickLine={false} allowDecimals={false} />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '8px',
-                    border: '1px solid #E2E4DE',
-                    fontSize: '12px',
-                  }}
-                />
-                <Bar dataKey="count" fill="#176B52" radius={[4, 4, 0, 0]} name="Candidates" />
-              </BarChart>
-            </ResponsiveContainer>
+            <div className="h-64 w-full min-h-[250px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={funnelData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#EAECE5" vertical={false} />
+                  <XAxis dataKey="stage" stroke="#8C92A0" fontSize={11} tickLine={false} />
+                  <YAxis stroke="#8C92A0" fontSize={11} tickLine={false} allowDecimals={false} />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: '#FFFFFF',
+                      borderRadius: '8px',
+                      border: '1px solid #E2E4DE',
+                      fontSize: '12px',
+                    }}
+                  />
+                  <Bar dataKey="count" fill="#176B52" radius={[4, 4, 0, 0]} name="Candidates" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Skills Pool Distribution */}
+          <div className="surface-card rounded-2xl p-6 min-w-0">
+            <div className="flex items-center justify-between mb-1">
+              <h3 className="font-editorial text-lg font-semibold text-ink">
+                Skills Frequency Distribution
+              </h3>
+              <span className="text-[11px] font-mono text-ink-muted bg-sage-100 px-2 py-0.5 rounded-full font-medium">
+                Top {skillDist.length} Competencies
+              </span>
+            </div>
+            <p className="text-xs text-ink-muted mb-4">
+              Top competencies available across screened candidates in the talent pool.
+            </p>
+
+            <div className="h-64 w-full min-h-[250px]">
+              {skillDist.length === 0 ? (
+                <div className="h-full flex items-center justify-center text-xs text-ink-muted italic">
+                  No skills parsed yet
+                </div>
+              ) : (
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={skillDist} layout="vertical" margin={{ top: 5, right: 15, left: 10, bottom: 5 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#EAECE5" horizontal={false} />
+                    <XAxis type="number" stroke="#8C92A0" fontSize={11} tickLine={false} allowDecimals={false} />
+                    <YAxis dataKey="skill" type="category" stroke="#8C92A0" fontSize={10} width={90} tickLine={false} />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#FFFFFF',
+                        borderRadius: '8px',
+                        border: '1px solid #E2E4DE',
+                        fontSize: '12px',
+                      }}
+                    />
+                    <Bar dataKey="count" fill="#90C7B4" radius={[0, 4, 4, 0]} name="Candidates" />
+                  </BarChart>
+                </ResponsiveContainer>
+              )}
+            </div>
           </div>
         </div>
-
-        {/* Skills Pool Distribution */}
-        <div className="surface-card rounded-2xl p-6">
-          <h3 className="font-editorial text-lg font-semibold text-ink mb-1">
-            Skills Frequency Distribution
-          </h3>
-          <p className="text-xs text-ink-muted mb-4">
-            Top competencies available in the parsed talent candidate pool.
-          </p>
-
-          <div className="h-64 w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={skillDist} layout="vertical">
-                <CartesianGrid strokeDasharray="3 3" stroke="#EAECE5" horizontal={false} />
-                <XAxis type="number" stroke="#8C92A0" fontSize={11} tickLine={false} allowDecimals={false} />
-                <YAxis dataKey="skill" type="category" stroke="#8C92A0" fontSize={10} width={90} tickLine={false} />
-                <Tooltip
-                  contentStyle={{
-                    backgroundColor: '#FFFFFF',
-                    borderRadius: '8px',
-                    border: '1px solid #E2E4DE',
-                    fontSize: '12px',
-                  }}
-                />
-                <Bar dataKey="count" fill="#90C7B4" radius={[0, 4, 4, 0]} name="Candidates" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-      </div>
+      )}
 
       {/* Job Screening Summaries Table */}
-      <div className="surface-card rounded-2xl p-6">
-        <h3 className="font-editorial text-lg font-semibold text-ink mb-1">
-          Role-Wise Screening Summaries
-        </h3>
-        <p className="text-xs text-ink-muted mb-4">
-          Aggregate performance and average score benchmarks across open positions.
-        </p>
+      {(!loading || data) && (
+        <div className="surface-card rounded-2xl p-6">
+          <h3 className="font-editorial text-lg font-semibold text-ink mb-1">
+            Role-Wise Screening Summaries
+          </h3>
+          <p className="text-xs text-ink-muted mb-4">
+            Aggregate performance and average score benchmarks across open positions.
+          </p>
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-[#FAFBF9] border-b border-border text-ink-muted uppercase font-semibold text-[10px] tracking-wider">
-              <tr>
-                <th className="py-3 px-4">Role Title</th>
-                <th className="py-3 px-4">Department</th>
-                <th className="py-3 px-4">Total Screened</th>
-                <th className="py-3 px-4">Shortlisted</th>
-                <th className="py-3 px-4">Hired</th>
-                <th className="py-3 px-4">Avg Match Score</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-border font-medium">
-              {summaries.map((s) => (
-                <tr key={s.jobId} className="hover:bg-sage-50/40 transition-colors">
-                  <td className="py-3 px-4 font-bold text-ink">{s.title}</td>
-                  <td className="py-3 px-4 text-ink-muted">{s.department}</td>
-                  <td className="py-3 px-4 font-mono">{s.totalCandidates}</td>
-                  <td className="py-3 px-4 font-mono text-forest-700">{s.shortlistedCandidates}</td>
-                  <td className="py-3 px-4 font-mono font-bold text-forest-800">{s.hiredCandidates}</td>
-                  <td className="py-3 px-4 font-mono">
-                    <ScoreBadge score={s.avgMatchScore} size="sm" />
-                  </td>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead className="bg-[#FAFBF9] border-b border-border text-ink-muted uppercase font-semibold text-[10px] tracking-wider">
+                <tr>
+                  <th className="py-3 px-4">Role Title</th>
+                  <th className="py-3 px-4">Department</th>
+                  <th className="py-3 px-4">Total Screened</th>
+                  <th className="py-3 px-4">Shortlisted</th>
+                  <th className="py-3 px-4">Hired</th>
+                  <th className="py-3 px-4">Avg Match Score</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* Ranked Candidate Leaderboard */}
-      <div className="surface-card rounded-2xl p-6">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h3 className="font-editorial text-lg font-semibold text-ink">
-              Ranked Candidate Roster ({rankings.length})
-            </h3>
-            <p className="text-xs text-ink-muted">
-              Top scoring candidate evaluations sorted strictly by evidence-backed scores.
-            </p>
+              </thead>
+              <tbody className="divide-y divide-border font-medium">
+                {summaries.length === 0 ? (
+                  <tr>
+                    <td colSpan="6" className="py-8 text-center text-ink-muted">
+                      No active job openings found
+                    </td>
+                  </tr>
+                ) : (
+                  summaries.map((s) => (
+                    <tr key={s.jobId} className="hover:bg-sage-50/40 transition-colors">
+                      <td className="py-3 px-4 font-bold text-ink">{s.title}</td>
+                      <td className="py-3 px-4 text-ink-muted">{s.department}</td>
+                      <td className="py-3 px-4 font-mono">{s.totalCandidates}</td>
+                      <td className="py-3 px-4 font-mono text-forest-700">{s.shortlistedCandidates}</td>
+                      <td className="py-3 px-4 font-mono font-bold text-forest-800">{s.hiredCandidates}</td>
+                      <td className="py-3 px-4 font-mono">
+                        <ScoreBadge score={s.avgMatchScore} size="sm" />
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
           </div>
         </div>
+      )}
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-[#FAFBF9] border-b border-border text-ink-muted uppercase font-semibold text-[10px] tracking-wider">
-              <tr>
-                <th className="py-3 px-4">Rank</th>
-                <th className="py-3 px-4">Candidate</th>
-                <th className="py-3 px-4">Target Job</th>
-                <th className="py-3 px-4">Overall Score</th>
-                <th className="py-3 px-4">Skill Align</th>
-                <th className="py-3 px-4">Semantic</th>
-                <th className="py-3 px-4">Exp</th>
-                <th className="py-3 px-4 text-right">Profile</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-border">
-              {rankings.map((r, idx) => (
-                <tr key={r._id} className="hover:bg-sage-50/40 transition-colors">
-                  <td className="py-3 px-4 font-mono font-bold text-ink-muted">
-                    #{idx + 1}
-                  </td>
-                  <td className="py-3 px-4">
-                    <Link
-                      to={`/candidates/${r.candidateId?._id}`}
-                      className="font-bold text-ink hover:text-forest-700"
-                    >
-                      {r.candidateId?.name}
-                    </Link>
-                    <span className="text-[10px] text-ink-subtle block">
-                      {r.candidateId?.email}
-                    </span>
-                  </td>
-                  <td className="py-3 px-4 text-ink-muted">{r.jobId?.title}</td>
-                  <td className="py-3 px-4">
-                    <ScoreBadge score={r.overallScore} size="sm" />
-                  </td>
-                  <td className="py-3 px-4 font-mono">{r.componentScores?.skillAlignment}%</td>
-                  <td className="py-3 px-4 font-mono">{r.componentScores?.semanticSimilarity}%</td>
-                  <td className="py-3 px-4 font-mono">{r.candidateId?.totalExperienceYears}y</td>
-                  <td className="py-3 px-4 text-right">
-                    <Link
-                      to={`/candidates/${r.candidateId?._id}`}
-                      className="text-forest-600 hover:text-forest-800 font-semibold"
-                    >
-                      Review &rarr;
-                    </Link>
-                  </td>
+      {/* Ranked Candidate Leaderboard */}
+      {(!loading || data) && (
+        <div className="surface-card rounded-2xl p-6">
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h3 className="font-editorial text-lg font-semibold text-ink">
+                Ranked Candidate Roster ({rankings.length})
+              </h3>
+              <p className="text-xs text-ink-muted">
+                Top scoring candidate evaluations sorted strictly by evidence-backed scores.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead className="bg-[#FAFBF9] border-b border-border text-ink-muted uppercase font-semibold text-[10px] tracking-wider">
+                <tr>
+                  <th className="py-3 px-4">Rank</th>
+                  <th className="py-3 px-4">Candidate</th>
+                  <th className="py-3 px-4">Target Job</th>
+                  <th className="py-3 px-4">Overall Score</th>
+                  <th className="py-3 px-4">Skill Align</th>
+                  <th className="py-3 px-4">Semantic</th>
+                  <th className="py-3 px-4">Exp</th>
+                  <th className="py-3 px-4 text-right">Profile</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {rankings.length === 0 ? (
+                  <tr>
+                    <td colSpan="8" className="py-8 text-center text-ink-muted">
+                      No candidate screening records available yet. Upload resumes to generate rankings.
+                    </td>
+                  </tr>
+                ) : (
+                  rankings.map((r, idx) => (
+                    <tr key={r._id} className="hover:bg-sage-50/40 transition-colors">
+                      <td className="py-3 px-4 font-mono font-bold text-ink-muted">
+                        #{idx + 1}
+                      </td>
+                      <td className="py-3 px-4">
+                        <Link
+                          to={`/candidates/${r.candidateId?._id || ''}`}
+                          className="font-bold text-ink hover:text-forest-700"
+                        >
+                          {r.candidateId?.name || 'Evaluated Candidate'}
+                        </Link>
+                        <span className="text-[10px] text-ink-subtle block">
+                          {r.candidateId?.email || 'Confidential'}
+                        </span>
+                      </td>
+                      <td className="py-3 px-4 text-ink-muted">{r.jobId?.title || 'Open Role'}</td>
+                      <td className="py-3 px-4">
+                        <ScoreBadge score={r.overallScore} size="sm" />
+                      </td>
+                      <td className="py-3 px-4 font-mono">{r.componentScores?.skillAlignment ?? 0}%</td>
+                      <td className="py-3 px-4 font-mono">{r.componentScores?.semanticSimilarity ?? 0}%</td>
+                      <td className="py-3 px-4 font-mono">{r.candidateId?.totalExperienceYears ?? 0}y</td>
+                      <td className="py-3 px-4 text-right">
+                        {r.candidateId?._id ? (
+                          <Link
+                            to={`/candidates/${r.candidateId._id}`}
+                            className="text-forest-600 hover:text-forest-800 font-semibold"
+                          >
+                            Review &rarr;
+                          </Link>
+                        ) : (
+                          <span className="text-ink-subtle text-[11px]">Archived</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
