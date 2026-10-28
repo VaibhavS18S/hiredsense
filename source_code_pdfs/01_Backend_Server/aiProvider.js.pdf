@@ -1,0 +1,1953 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 12809 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: aiProvider.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+0.941 0.969 0.957 rg
+1 w
+0.706 0.843 0.784 RG
+40.00 730.00 515.00 54.00 re
+B
+BT
+/F2 9 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 50.00 768.00 Tm
+(FILE: C:\\HCL_TRAINING\\server\\src\\services\\matchingEngine\\aiProvider.js) Tj
+ET
+BT
+/F1 7.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 50.00 755.00 Tm
+(LINES: 134  |  SIZE: 4.6 KB  |  LANGUAGE: JS) Tj
+ET
+BT
+/F1 7.5 Tf
+0.333 0.357 0.400 rg
+1 0 0 1 50.00 742.00 Tm
+(MODULE: Hugging Face API + Local TF-IDF Cosine Vector Fallback) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 716.00 Tm
+(   1 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 716.00 Tm
+(/**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 706.00 Tm
+(   2 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 706.00 Tm
+( * AI Provider Abstraction Layer) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 696.00 Tm
+(   3 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 696.00 Tm
+( * Supports Hugging Face Inference API / Configurable Embedding Services) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 686.00 Tm
+(   4 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 686.00 Tm
+( * with an automatic, robust local vector space fallback.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 676.00 Tm
+(   5 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 676.00 Tm
+( */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 666.00 Tm
+(   6 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 666.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 656.00 Tm
+(   7 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 656.00 Tm
+(// Stop words for clean local text vectorization) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 646.00 Tm
+(   8 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 646.00 Tm
+(const STOP_WORDS = new Set\([) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 636.00 Tm
+(   9 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 636.00 Tm
+(  'a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'and', 'any', ') Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 626.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 626.00 Tm
+(are', 'aren\\'t', 'as', 'at',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 616.00 Tm
+(  10 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 616.00 Tm
+(  'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', ') Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 606.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 606.00 Tm
+(can', 'cannot', 'could',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 596.00 Tm
+(  11 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 596.00 Tm
+(  'did', 'do', 'does', 'doing', 'down', 'during', 'each', 'few', 'for', 'from', 'further) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 586.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 586.00 Tm
+(', 'had', 'has', 'have',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 576.00 Tm
+(  12 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 576.00 Tm
+(  'having', 'he', 'her', 'here', 'hers', 'herself', 'him', 'himself', 'his', 'how', 'i',) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 566.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 566.00 Tm
+( 'if', 'in', 'into', 'is',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 556.00 Tm
+(  13 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 556.00 Tm
+(  'it', 'its', 'itself', 'just', 'me', 'more', 'most', 'my', 'myself', 'no', 'nor', 'not) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 546.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 546.00 Tm
+(', 'now', 'of', 'off',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 536.00 Tm
+(  14 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 536.00 Tm
+(  'on', 'once', 'only', 'or', 'other', 'ought', 'our', 'ours', 'ourselves', 'out', 'over) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 526.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 526.00 Tm
+(', 'own', 'same', 'she',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 516.00 Tm
+(  15 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 516.00 Tm
+(  'should', 'so', 'some', 'such', 'than', 'that', 'the', 'their', 'theirs', 'them', 'the) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 506.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 506.00 Tm
+(mselves', 'then', 'there',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 496.00 Tm
+(  16 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 496.00 Tm
+(  'these', 'they', 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'ver) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 486.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 486.00 Tm
+(y', 'was', 'we', 'were',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 476.00 Tm
+(  17 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 476.00 Tm
+(  'what', 'when', 'where', 'which', 'while', 'who', 'whom', 'why', 'with', 'would', 'you) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 466.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 466.00 Tm
+(', 'your', 'yours') Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 456.00 Tm
+(  18 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 456.00 Tm
+(]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 446.00 Tm
+(  19 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 446.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 436.00 Tm
+(  20 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 436.00 Tm
+(class AIEmbeddingService {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 426.00 Tm
+(  21 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 426.00 Tm
+(  constructor\(\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 416.00 Tm
+(  22 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 416.00 Tm
+(    this.apiKey = process.env.HF_API_KEY || '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 406.00 Tm
+(  23 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 406.00 Tm
+(    this.model = process.env.HF_EMBEDDING_MODEL || 'sentence-transformers/all-MiniLM-L6-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 396.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 396.00 Tm
+(v2';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 386.00 Tm
+(  24 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 386.00 Tm
+(    this.hfEndpoint = `https://api-inference.huggingface.co/pipeline/feature-extraction/) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 376.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 376.00 Tm
+(${this.model}`;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 366.00 Tm
+(  25 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 366.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 356.00 Tm
+(  26 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 356.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 346.00 Tm
+(  27 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 346.00 Tm
+(  /**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 336.00 Tm
+(  28 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 336.00 Tm
+(   * Calculates semantic similarity between candidate resume text and job description) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 326.00 Tm
+(  29 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 326.00 Tm
+(   * Returns a score from 0 to 100.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 316.00 Tm
+(  30 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 316.00 Tm
+(   */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 306.00 Tm
+(  31 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 306.00 Tm
+(  async calculateSimilarity\(resumeText, jobText\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 296.00 Tm
+(  32 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 296.00 Tm
+(    if \(this.apiKey && this.apiKey.trim\(\) !== ''\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 286.00 Tm
+(  33 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 286.00 Tm
+(      try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 276.00 Tm
+(  34 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 276.00 Tm
+(        const sim = await this._getHuggingFaceSimilarity\(resumeText, jobText\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 266.00 Tm
+(  35 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 266.00 Tm
+(        if \(typeof sim === 'number' && !isNaN\(sim\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 256.00 Tm
+(  36 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 256.00 Tm
+(          return Math.max\(0, Math.min\(100, Math.round\(sim * 100\)\)\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 246.00 Tm
+(  37 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 246.00 Tm
+(        }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 236.00 Tm
+(  38 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 236.00 Tm
+(      } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 226.00 Tm
+(  39 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 226.00 Tm
+(        console.warn\('Hugging Face Inference call failed, gracefully falling back to Loc) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 216.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 216.00 Tm
+(al Vector Space:', err.message\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 206.00 Tm
+(  40 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 206.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 196.00 Tm
+(  41 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 196.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 186.00 Tm
+(  42 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 186.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 176.00 Tm
+(  43 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 176.00 Tm
+(    // Default High-Accuracy Local Semantic Vector Space Engine) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 166.00 Tm
+(  44 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 166.00 Tm
+(    return this._calculateLocalSemanticSimilarity\(resumeText, jobText\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 156.00 Tm
+(  45 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 156.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 146.00 Tm
+(  46 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 146.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 136.00 Tm
+(  47 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 136.00 Tm
+(  /**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 126.00 Tm
+(  48 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 126.00 Tm
+(   * Hugging Face Inference API call) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 116.00 Tm
+(  49 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 116.00 Tm
+(   */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 106.00 Tm
+(  50 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 106.00 Tm
+(  async _getHuggingFaceSimilarity\(textA, textB\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 96.00 Tm
+(  51 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 96.00 Tm
+(    const fetch = global.fetch || require\('node-fetch'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 86.00 Tm
+(  52 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 86.00 Tm
+(    const response = await fetch\(this.hfEndpoint, {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 76.00 Tm
+(  53 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 76.00 Tm
+(      method: 'POST',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 66.00 Tm
+(  54 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 66.00 Tm
+(      headers: {) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 1 of 3) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 12703 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: aiProvider.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+(  55 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(        Authorization: `Bearer ${this.apiKey}`,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+(  56 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(        'Content-Type': 'application/json',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+(  57 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(      },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+(  58 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(      body: JSON.stringify\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+(  59 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(        inputs: {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+(  60 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(          source_sentence: textB.substring\(0, 1000\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+(  61 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(          sentences: [textA.substring\(0, 1000\)],) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+(  62 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(        },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+(  63 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(      }\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+(  64 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+(  65 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+(  66 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 670.00 Tm
+(    if \(!response.ok\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+(  67 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 660.00 Tm
+(      throw new Error\(`HF API error: ${response.statusText}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+(  68 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+(  69 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+(  70 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 630.00 Tm
+(    const data = await response.json\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+(  71 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 620.00 Tm
+(    if \(Array.isArray\(data\) && data.length > 0\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+(  72 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 610.00 Tm
+(      return data[0];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+(  73 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+(  74 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 590.00 Tm
+(    return 0.75;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+(  75 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+(  76 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+(  77 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 560.00 Tm
+(  /**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+(  78 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 550.00 Tm
+(   * Deterministic, high-precision Local Vector Space Engine \(n-gram sublinear TF-IDF + ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 540.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 540.00 Tm
+(Cosine\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+(  79 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 530.00 Tm
+(   */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+(  80 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(  _calculateLocalSemanticSimilarity\(docA, docB\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+(  81 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 510.00 Tm
+(    const tokenize = \(text\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+(  82 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 500.00 Tm
+(      return text) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+(  83 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(        .toLowerCase\(\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+(  84 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(        .replace\(/[^a-z0-9#+. ]/g, ' '\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+(  85 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(        .split\(/\\s+/\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+(  86 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(        .filter\(\(w\) => w.length > 1 && !STOP_WORDS.has\(w\)\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+(  87 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(    };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+(  88 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+(  89 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 430.00 Tm
+(    const tokensA = tokenize\(docA\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+(  90 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 420.00 Tm
+(    const tokensB = tokenize\(docB\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+(  91 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+(  92 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 400.00 Tm
+(    if \(tokensA.length === 0 || tokensB.length === 0\) return 50;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+(  93 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+(  94 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 380.00 Tm
+(    const freqA = {};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+(  95 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 370.00 Tm
+(    const freqB = {};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+(  96 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+(  97 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(    tokensA.forEach\(\(w\) => { freqA[w] = \(freqA[w] || 0\) + 1; }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+(  98 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(    tokensB.forEach\(\(w\) => { freqB[w] = \(freqB[w] || 0\) + 1; }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+(  99 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 100 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 320.00 Tm
+(    // Collect all vocabulary) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 101 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 310.00 Tm
+(    const vocabulary = new Set\([...Object.keys\(freqA\), ...Object.keys\(freqB\)]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 102 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 103 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 290.00 Tm
+(    let dotProduct = 0;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 104 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 280.00 Tm
+(    let normA = 0;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 105 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 270.00 Tm
+(    let normB = 0;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 106 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 107 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(    for \(const term of vocabulary\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 108 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 240.00 Tm
+(      // Sublinear tf scaling: 1 + log\(tf\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 109 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 230.00 Tm
+(      const weightA = freqA[term] ? \(1 + Math.log\(freqA[term]\)\) : 0;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 110 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 220.00 Tm
+(      const weightB = freqB[term] ? \(1 + Math.log\(freqB[term]\)\) : 0;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 111 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 112 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(      dotProduct += weightA * weightB;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 113 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(      normA += weightA * weightA;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 114 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(      normB += weightB * weightB;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 115 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 116 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 117 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 150.00 Tm
+(    if \(normA === 0 || normB === 0\) return 50;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 118 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 119 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 130.00 Tm
+(    const rawCosine = dotProduct / \(Math.sqrt\(normA\) * Math.sqrt\(normB\)\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 120 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(    ) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 121 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 110.00 Tm
+(    // Normalize cosine similarity to a practical 0 - 100 scale) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 122 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 100.00 Tm
+(    // Document cosine similarities often range from 0.1 to 0.7; map this smoothly) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 123 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 90.00 Tm
+(    const normalized = Math.min\(100, Math.max\(10, Math.round\(rawCosine * 125\)\)\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 124 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 80.00 Tm
+(    return normalized;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 125 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(  }) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 2 of 3) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 1956 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: aiProvider.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 126 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 127 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 128 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 760.00 Tm
+(const aiProvider = new AIEmbeddingService\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 129 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 130 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(module.exports = {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 131 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(  aiProvider,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 132 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(  AIEmbeddingService,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 133 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 134 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 3 of 3) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 5 0 R >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 7 0 R >>
+endobj
+11 0 obj
+<< /Type /Pages /Kids [8 0 R 9 0 R 10 0 R] /Count 3 >>
+endobj
+12 0 obj
+<< /Type /Catalog /Pages 11 0 R >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000000313 00000 n 
+0000000413 00000 n 
+0000013275 00000 n 
+0000026031 00000 n 
+0000028039 00000 n 
+0000028202 00000 n 
+0000028365 00000 n 
+0000028529 00000 n 
+0000028600 00000 n 
+trailer
+<< /Size 13 /Root 12 0 R >>
+startxref
+28651
+%%EOF

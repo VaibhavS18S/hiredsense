@@ -1,0 +1,4737 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 12046 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: PipelinePage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+0.941 0.969 0.957 rg
+1 w
+0.706 0.843 0.784 RG
+40.00 730.00 515.00 54.00 re
+B
+BT
+/F2 9 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 50.00 768.00 Tm
+(FILE: C:\\HCL_TRAINING\\client\\src\\pages\\PipelinePage.jsx) Tj
+ET
+BT
+/F1 7.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 50.00 755.00 Tm
+(LINES: 337  |  SIZE: 12.5 KB  |  LANGUAGE: JSX) Tj
+ET
+BT
+/F1 7.5 Tf
+0.333 0.357 0.400 rg
+1 0 0 1 50.00 742.00 Tm
+(MODULE: 7-Stage Drag-and-Drop Kanban Recruitment Board with Undo Support) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 716.00 Tm
+(   1 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 716.00 Tm
+(import React, { useState, useEffect } from 'react';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 706.00 Tm
+(   2 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 706.00 Tm
+(import { useSearchParams, Link } from 'react-router-dom';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 696.00 Tm
+(   3 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 696.00 Tm
+(import {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 686.00 Tm
+(   4 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 686.00 Tm
+(  KanbanSquare,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 676.00 Tm
+(   5 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 676.00 Tm
+(  Users,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 666.00 Tm
+(   6 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 666.00 Tm
+(  Search,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 656.00 Tm
+(   7 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 656.00 Tm
+(  Filter,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 646.00 Tm
+(   8 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 646.00 Tm
+(  ArrowRight,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 636.00 Tm
+(   9 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 636.00 Tm
+(  RotateCcw,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 626.00 Tm
+(  10 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 626.00 Tm
+(  CheckCircle2,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 616.00 Tm
+(  11 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 616.00 Tm
+(  XCircle,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 606.00 Tm
+(  12 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 606.00 Tm
+(  MoreVertical,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 596.00 Tm
+(  13 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 596.00 Tm
+(  Plus,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 586.00 Tm
+(  14 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 586.00 Tm
+(  Briefcase,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 576.00 Tm
+(  15 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 576.00 Tm
+(  User,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 566.00 Tm
+(  16 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 566.00 Tm
+(  Clock,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 556.00 Tm
+(  17 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 556.00 Tm
+(  Sparkles,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 546.00 Tm
+(  18 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 546.00 Tm
+(} from 'lucide-react';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 536.00 Tm
+(  19 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 536.00 Tm
+(import { api } from '../api/client';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 526.00 Tm
+(  20 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 526.00 Tm
+(import { ScoreBadge } from '../components/common/ScoreBadge';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 516.00 Tm
+(  21 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 516.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 506.00 Tm
+(  22 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 506.00 Tm
+(export const PipelinePage = \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 496.00 Tm
+(  23 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 496.00 Tm
+(  const [searchParams] = useSearchParams\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 486.00 Tm
+(  24 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 486.00 Tm
+(  const initialJobId = searchParams.get\('jobId'\) || 'all';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 476.00 Tm
+(  25 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 476.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 466.00 Tm
+(  26 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 466.00 Tm
+(  const [jobs, setJobs] = useState\([]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 456.00 Tm
+(  27 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 456.00 Tm
+(  const [selectedJob, setSelectedJob] = useState\(initialJobId\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 446.00 Tm
+(  28 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 446.00 Tm
+(  const [pipelineData, setPipelineData] = useState\(null\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 436.00 Tm
+(  29 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 436.00 Tm
+(  const [search, setSearch] = useState\(''\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 426.00 Tm
+(  30 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 426.00 Tm
+(  const [loading, setLoading] = useState\(true\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 416.00 Tm
+(  31 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 416.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 406.00 Tm
+(  32 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 406.00 Tm
+(  // Bulk Selection) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 396.00 Tm
+(  33 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 396.00 Tm
+(  const [selectedApps, setSelectedApps] = useState\([]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 386.00 Tm
+(  34 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 386.00 Tm
+(  const [showBulkModal, setShowBulkModal] = useState\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 376.00 Tm
+(  35 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 376.00 Tm
+(  const [bulkTargetStage, setBulkTargetStage] = useState\('Shortlisted'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 366.00 Tm
+(  36 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 366.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 356.00 Tm
+(  37 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 356.00 Tm
+(  // Last Moved Application for Undo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 346.00 Tm
+(  38 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 346.00 Tm
+(  const [lastMovedAppId, setLastMovedAppId] = useState\(null\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 336.00 Tm
+(  39 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 336.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 326.00 Tm
+(  40 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 326.00 Tm
+(  const STAGES = ['New', 'Screening', 'Shortlisted', 'Interview', 'Offer', 'Hired', 'Rej) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 316.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 316.00 Tm
+(ected'];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 306.00 Tm
+(  41 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 306.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 296.00 Tm
+(  42 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 296.00 Tm
+(  useEffect\(\(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 286.00 Tm
+(  43 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 286.00 Tm
+(    fetchJobs\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 276.00 Tm
+(  44 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 276.00 Tm
+(  }, []\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 266.00 Tm
+(  45 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 266.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 256.00 Tm
+(  46 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 256.00 Tm
+(  useEffect\(\(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 246.00 Tm
+(  47 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 246.00 Tm
+(    fetchPipeline\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 236.00 Tm
+(  48 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 236.00 Tm
+(  }, [selectedJob, search]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 226.00 Tm
+(  49 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 226.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 216.00 Tm
+(  50 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 216.00 Tm
+(  const fetchJobs = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 206.00 Tm
+(  51 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 206.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 196.00 Tm
+(  52 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 196.00 Tm
+(      const res = await api.get\('/jobs'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 186.00 Tm
+(  53 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 186.00 Tm
+(      if \(res.success\) setJobs\(res.data || []\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 176.00 Tm
+(  54 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 176.00 Tm
+(    } catch \(e\) {}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 166.00 Tm
+(  55 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 166.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 156.00 Tm
+(  56 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 156.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 146.00 Tm
+(  57 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 146.00 Tm
+(  const fetchPipeline = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 136.00 Tm
+(  58 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 136.00 Tm
+(    setLoading\(true\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 126.00 Tm
+(  59 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 126.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 116.00 Tm
+(  60 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 116.00 Tm
+(      const query = new URLSearchParams\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 106.00 Tm
+(  61 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 106.00 Tm
+(      if \(selectedJob !== 'all'\) query.append\('jobId', selectedJob\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 96.00 Tm
+(  62 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 96.00 Tm
+(      if \(search\) query.append\('search', search\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 86.00 Tm
+(  63 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 86.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 76.00 Tm
+(  64 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 76.00 Tm
+(      const res = await api.get\(`/pipeline?${query.toString\(\)}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 66.00 Tm
+(  65 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 66.00 Tm
+(      if \(res.success\) {) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 1 of 6) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 12561 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: PipelinePage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+(  66 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(        setPipelineData\(res.data\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+(  67 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+(  68 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+(  69 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(      console.error\(err\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+(  70 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(    } finally {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+(  71 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(      setLoading\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+(  72 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+(  73 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+(  74 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+(  75 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 690.00 Tm
+(  const handleMoveStage = async \(appId, targetStage\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+(  76 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 680.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+(  77 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 670.00 Tm
+(      const res = await api.patch\(`/pipeline/${appId}/stage`, { stage: targetStage }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+(  78 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 660.00 Tm
+(      if \(res.success\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+(  79 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(        setLastMovedAppId\(appId\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+(  80 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(        fetchPipeline\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+(  81 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+(  82 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+(  83 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(      alert\(err.message || 'Failed to move candidate stage'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+(  84 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+(  85 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+(  86 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+(  87 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 570.00 Tm
+(  const handleUndo = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+(  88 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 560.00 Tm
+(    if \(!lastMovedAppId\) return;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+(  89 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 550.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+(  90 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 540.00 Tm
+(      const res = await api.post\(`/pipeline/${lastMovedAppId}/undo`, {}\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+(  91 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 530.00 Tm
+(      if \(res.success\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+(  92 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(        setLastMovedAppId\(null\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+(  93 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(        fetchPipeline\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+(  94 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+(  95 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+(  96 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(      alert\(err.message || 'Undo failed'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+(  97 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+(  98 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+(  99 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 100 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 440.00 Tm
+(  const handleBulkAction = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 101 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 430.00 Tm
+(    if \(selectedApps.length === 0\) return;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 102 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 420.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 103 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 410.00 Tm
+(      const res = await api.post\('/pipeline/bulk-stage', {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 104 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(        applicationIds: selectedApps,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 105 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(        targetStage: bulkTargetStage,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 106 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(      }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 107 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 370.00 Tm
+(      if \(res.success\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 108 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(        setSelectedApps\([]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 109 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(        setShowBulkModal\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 110 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(        fetchPipeline\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 111 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 112 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 113 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(      alert\(err.message || 'Bulk update failed'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 114 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 115 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 116 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 117 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 270.00 Tm
+(  const toggleSelectApp = \(appId\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 118 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(    setSelectedApps\(\(prev\) =>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 119 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(      prev.includes\(appId\) ? prev.filter\(\(id\) => id !== appId\) : [...prev, appId]) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 120 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(    \);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 121 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 122 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 123 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 210.00 Tm
+(  const columns = pipelineData?.columns || {};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 124 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 125 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 190.00 Tm
+(  return \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 126 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(    <div className="space-y-6 max-w-full mx-auto">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 127 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(      {/* Header */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 128 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 150.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 150.00 Tm
+(-2 border-b border-border">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 129 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(        <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 130 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(          <span className="text-xs font-semibold uppercase tracking-wider text-forest-70) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 120.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 120.00 Tm
+(0">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 131 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(            Candidate Pipeline Management) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 132 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(          </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 133 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(          <h1 className="font-editorial text-3xl font-bold text-ink mt-0.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 134 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(            Recruitment Kanban Board) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 135 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(          </h1>) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 2 of 6) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 13317 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: PipelinePage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 136 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(          <p className="text-xs text-ink-muted mt-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 137 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(            Track candidates across stages, reassign recruiter ownership, and execute bu) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 760.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 760.00 Tm
+(lk actions.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 138 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(          </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 139 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 140 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 141 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(        <div className="flex items-center gap-2.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 142 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(          {lastMovedAppId && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 143 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(            <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 144 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(              onClick={handleUndo}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 145 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 border) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 670.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 670.00 Tm
+( border-amber-200 text-amber-900 rounded-lg text-xs font-semibold hover:bg-amber-100 tra) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 660.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 660.00 Tm
+(nsition-colors") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 146 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(            >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 147 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(              <RotateCcw className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 148 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(              <span>Undo Last Move</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 149 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(            </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 150 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(          \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 151 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 152 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(          {selectedApps.length > 0 && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 153 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(            <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 154 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(              onClick={\(\) => setShowBulkModal\(true\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 155 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-forest-500 te) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 550.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 550.00 Tm
+(xt-white rounded-lg text-xs font-medium shadow-sm hover:bg-forest-600 transition-colors") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 156 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(            >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 157 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(              <span>Bulk Action \({selectedApps.length}\)</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 158 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(            </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 159 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(          \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 160 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 161 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 162 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 163 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(      {/* Filter and Search Bar */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 164 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(      <div className="surface-card rounded-2xl p-4 flex flex-col md:flex-row md:items-ce) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 450.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 450.00 Tm
+(nter justify-between gap-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 165 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(        <div className="flex items-center gap-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 166 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(          <label className="text-xs font-semibold text-ink shrink-0">Filter by Job Openi) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 420.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 420.00 Tm
+(ng:</label>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 167 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(          <select) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 168 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(            value={selectedJob}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 169 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(            onChange={\(e\) => setSelectedJob\(e.target.value\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 170 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(            className="bg-[#FBFBF9] border border-border rounded-lg text-xs font-medium ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 370.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 370.00 Tm
+(text-ink px-3 py-1.5 focus:outline-none focus:border-forest-500 min-w-[240px]") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 171 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(          >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 172 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(            <option value="all">All Jobs \({jobs.length}\)</option>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 173 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(            {jobs.map\(\(j\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 174 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(              <option key={j._id} value={j._id}>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 175 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                {j.title}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 176 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(              </option>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 177 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(            \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 178 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(          </select>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 179 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 180 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 181 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(        <div className="relative w-full sm:w-64">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 182 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(          <Search className="w-4 h-4 text-ink-subtle absolute left-3 top-1/2 -translate-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 240.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 240.00 Tm
+(y-1/2" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 183 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(          <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 184 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(            type="text") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 185 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(            placeholder="Search candidate name or email...") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 186 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(            value={search}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 187 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(            onChange={\(e\) => setSearch\(e.target.value\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 188 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(            className="w-full bg-[#FBFBF9] border border-border rounded-lg pl-9 pr-3 py-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 170.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 170.00 Tm
+(1.5 text-xs text-ink focus:outline-none focus:border-forest-500") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 189 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(          />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 190 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 191 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 192 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 193 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(      {/* 7-Stage Horizontal Scrollable Kanban Columns */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 194 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(      <div className="flex gap-4 overflow-x-auto pb-6 pt-1 min-h-[550px]">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 195 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(        {STAGES.map\(\(stageName\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 196 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 90.00 Tm
+(          const col = columns[stageName] || { count: 0, candidates: [] };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 197 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 198 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 70.00 Tm
+(          return \() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 3 of 6) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Length 13879 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: PipelinePage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 199 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(            <div) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 200 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(              key={stageName}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 201 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(              className="w-72 shrink-0 flex flex-col rounded-2xl bg-[#F8F9F6] border bor) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 750.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 750.00 Tm
+(der-border overflow-hidden") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 202 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(            >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 203 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(              {/* Column Header */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 204 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(              <div className="p-3.5 border-b border-border flex items-center justify-bet) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 710.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 710.00 Tm
+(ween bg-white">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 205 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                <div className="flex items-center gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 206 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(                  <span className="font-semibold text-xs text-ink">{stageName}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 207 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-sag) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 670.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 670.00 Tm
+(e-100 text-forest-700 font-bold border border-sage-200">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 208 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                    {col.count}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 209 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                  </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 210 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 211 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 212 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 213 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(              {/* Candidates Column Body */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 214 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(              <div className="p-2.5 flex-1 space-y-2.5 overflow-y-auto max-h-[600px]">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 215 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(                {col.candidates.length === 0 ? \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 216 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                  <div className="text-center py-10 text-[11px] text-ink-subtle italic">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 217 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                    No candidates in {stageName}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 218 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 219 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(                \) : \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 220 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(                  col.candidates.map\(\(card\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 221 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 530.00 Tm
+(                    const isChecked = selectedApps.includes\(card._id\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 222 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 223 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 510.00 Tm
+(                    return \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 224 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(                      <div) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 225 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(                        key={card._id}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 226 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(                        className={`surface-card rounded-xl p-3 border transition-all ho) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 470.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 470.00 Tm
+(ver:border-forest-300 hover:shadow-card group relative ${) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 227 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(                          isChecked ? 'ring-2 ring-forest-500 bg-forest-50/20' : '') Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 228 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(                        }`}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 229 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(                      >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 230 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(                        <div className="flex items-start justify-between gap-2 mb-1.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 231 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(                          <div className="flex items-center gap-1.5 min-w-0">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 232 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(                            <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 233 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(                              type="checkbox") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 234 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(                              checked={isChecked}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 235 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(                              onChange={\(\) => toggleSelectApp\(card._id\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 236 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                              className="rounded text-forest-600 focus:ring-forest-500 c) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 360.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 360.00 Tm
+(ursor-pointer shrink-0") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 237 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                            />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 238 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                            <Link) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 239 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                              to={`/candidates/${card.candidate?._id}`}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 240 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                              className="font-bold text-xs text-ink hover:text-forest-70) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 310.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 310.00 Tm
+(0 truncate") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 241 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                            >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 242 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                              {card.candidate?.name}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 243 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(                            </Link>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 244 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 245 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(                          <ScoreBadge score={card.score} size="sm" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 246 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 247 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 248 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                        <span className="text-[10px] text-ink-muted block truncate mb-2") Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 220.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 220.00 Tm
+(>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 249 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                          {card.job?.title} &bull; {card.candidate?.totalExperienceYears) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 200.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 200.00 Tm
+(}y exp) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 250 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                        </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 251 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 252 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                        {/* Top 2 skills */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 253 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(                        <div className="flex flex-wrap gap-1 mb-2.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 254 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                          {\(card.candidate?.skills || []\).slice\(0, 2\).map\(\(s\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 255 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                            <span) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 256 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                              key={s.name}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 257 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                              className="text-[9px] px-1.5 py-0.2 rounded bg-sage-50 tex) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 110.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 110.00 Tm
+(t-ink border border-sage-200") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 258 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                            >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 259 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(                              {s.name}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 260 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(                            </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 261 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(                          \)\)}) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 4 of 6) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Length 13296 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: PipelinePage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 262 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(                        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 263 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 264 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(                        {/* Stage Progression Selector */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 265 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(                        <div className="pt-2 border-t border-border flex items-center ju) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 740.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 740.00 Tm
+(stify-between text-[11px]">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 266 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(                          <span className="text-[10px] text-ink-subtle">Move to:</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 267 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(                          <select) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 268 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                            value={card.stage}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 269 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                            onChange={\(e\) => handleMoveStage\(card._id, e.target.value\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 270 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(                            className="bg-[#FBFBF9] border border-border rounded text-[1) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 680.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 680.00 Tm
+(0px] px-1.5 py-0.5 text-ink font-medium focus:outline-none focus:border-forest-500 curso) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 670.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 670.00 Tm
+(r-pointer") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 271 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                          >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 272 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                            {STAGES.map\(\(s\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 273 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                              <option key={s} value={s}>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 274 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(                                {s}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 275 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(                              </option>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 276 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(                            \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 277 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                          </select>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 278 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(                        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 279 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 280 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                    \);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 281 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(                  }\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 282 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(                \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 283 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 284 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 285 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(          \);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 286 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(        }\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 287 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 288 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 289 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(      {/* Bulk Action Confirmation Modal */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 290 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(      {showBulkModal && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 291 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(        <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-cente) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 450.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 450.00 Tm
+(r justify-center p-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 292 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(          <div className="bg-white rounded-2xl shadow-dropdown border border-border max-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 430.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 430.00 Tm
+(w-sm w-full p-6 space-y-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 293 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(            <h3 className="font-editorial text-lg font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 294 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(              Bulk Move Candidates) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 295 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(            </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 296 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(            <p className="text-xs text-ink-muted">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 297 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(              Move {selectedApps.length} selected candidate\(s\) simultaneously to a targe) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 370.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 370.00 Tm
+(t stage.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 298 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(            </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 299 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 300 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(            <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 301 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(              <label className="block text-xs font-semibold text-ink mb-1.5">Target Stag) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 320.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 320.00 Tm
+(e</label>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 302 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(              <select) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 303 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                value={bulkTargetStage}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 304 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                onChange={\(e\) => setBulkTargetStage\(e.target.value\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 305 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(                className="w-full bg-[#FBFBF9] border border-border rounded-lg px-3 py-2) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 270.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 270.00 Tm
+( text-xs text-ink font-medium") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 306 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(              >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 307 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                {STAGES.map\(\(s\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 308 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                  <option key={s} value={s}>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 309 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                    {s}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 310 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                  </option>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 311 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 312 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(              </select>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 313 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 314 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 315 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(            <div className="pt-2 flex justify-end gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 316 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(              <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 317 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                type="button") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 318 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                onClick={\(\) => setShowBulkModal\(false\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 319 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                className="px-3.5 py-1.5 border border-border rounded-lg text-xs font-me) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 120.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 120.00 Tm
+(dium text-ink hover:bg-sage-50") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 320 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(              >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 321 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                Cancel) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 322 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(              </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 323 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(              <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 324 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(                type="button") Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 5 of 6) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Length 2862 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: PipelinePage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 325 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(                onClick={handleBulkAction}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 326 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                className="px-4 py-1.5 bg-forest-500 hover:bg-forest-600 text-white roun) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 760.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 760.00 Tm
+(ded-lg text-xs font-medium shadow-sm") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 327 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(              >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 328 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(                Confirm Move) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 329 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(              </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 330 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 331 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 332 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 333 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 334 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(    </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 335 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(  \);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 336 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 337 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 6 of 6) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 17 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 5 0 R >>
+endobj
+12 0 obj
+<< /Type /Page /Parent 17 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R >>
+endobj
+13 0 obj
+<< /Type /Page /Parent 17 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 7 0 R >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 17 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 8 0 R >>
+endobj
+15 0 obj
+<< /Type /Page /Parent 17 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R >>
+endobj
+16 0 obj
+<< /Type /Page /Parent 17 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 10 0 R >>
+endobj
+17 0 obj
+<< /Type /Pages /Kids [11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R] /Count 6 >>
+endobj
+18 0 obj
+<< /Type /Catalog /Pages 17 0 R >>
+endobj
+xref
+0 19
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000000313 00000 n 
+0000000413 00000 n 
+0000012512 00000 n 
+0000025126 00000 n 
+0000038496 00000 n 
+0000052428 00000 n 
+0000065777 00000 n 
+0000068692 00000 n 
+0000068856 00000 n 
+0000069020 00000 n 
+0000069184 00000 n 
+0000069348 00000 n 
+0000069512 00000 n 
+0000069677 00000 n 
+0000069771 00000 n 
+trailer
+<< /Size 19 /Root 18 0 R >>
+startxref
+69822
+%%EOF

@@ -1,0 +1,857 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 11663 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: db.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+0.941 0.969 0.957 rg
+1 w
+0.706 0.843 0.784 RG
+40.00 730.00 515.00 54.00 re
+B
+BT
+/F2 9 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 50.00 768.00 Tm
+(FILE: C:\\HCL_TRAINING\\server\\src\\config\\db.js) Tj
+ET
+BT
+/F1 7.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 50.00 755.00 Tm
+(LINES: 60  |  SIZE: 1.8 KB  |  LANGUAGE: JS) Tj
+ET
+BT
+/F1 7.5 Tf
+0.333 0.357 0.400 rg
+1 0 0 1 50.00 742.00 Tm
+(MODULE: Dual-Mode Persistence \(MongoDB Atlas + In-Memory Fallback\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 716.00 Tm
+(   1 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 716.00 Tm
+(const mongoose = require\('mongoose'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 706.00 Tm
+(   2 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 706.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 696.00 Tm
+(   3 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 696.00 Tm
+(let mongodInstance = null;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 686.00 Tm
+(   4 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 686.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 676.00 Tm
+(   5 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 676.00 Tm
+(const connectDB = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 666.00 Tm
+(   6 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 666.00 Tm
+(  const uri = process.env.MONGODB_URI;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 656.00 Tm
+(   7 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 656.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 646.00 Tm
+(   8 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 646.00 Tm
+(  if \(uri && uri.trim\(\) !== ''\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 636.00 Tm
+(   9 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 636.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 626.00 Tm
+(  10 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 626.00 Tm
+(      console.log\('Connecting to configured MongoDB URI...'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 616.00 Tm
+(  11 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 616.00 Tm
+(      const conn = await mongoose.connect\(uri, {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 606.00 Tm
+(  12 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 606.00 Tm
+(        serverSelectionTimeoutMS: 5000,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 596.00 Tm
+(  13 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 596.00 Tm
+(      }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 586.00 Tm
+(  14 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 586.00 Tm
+(      console.log\(`Connected to MongoDB Atlas / Remote: ${conn.connection.host}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 576.00 Tm
+(  15 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 576.00 Tm
+(      return conn;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 566.00 Tm
+(  16 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 566.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 556.00 Tm
+(  17 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 556.00 Tm
+(      console.warn\(`Failed to connect to configured MongoDB URI \(${err.message}\). Trying) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 546.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 546.00 Tm
+( fallback options...`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 536.00 Tm
+(  18 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 536.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 526.00 Tm
+(  19 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 526.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 516.00 Tm
+(  20 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 516.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 506.00 Tm
+(  21 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 506.00 Tm
+(  // Next, try local default MongoDB instance) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 496.00 Tm
+(  22 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 496.00 Tm
+(  try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 486.00 Tm
+(  23 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 486.00 Tm
+(    const localUri = 'mongodb://127.0.0.1:27017/hiresense';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 476.00 Tm
+(  24 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 476.00 Tm
+(    console.log\(`Attempting local MongoDB connection at ${localUri}...`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 466.00 Tm
+(  25 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 466.00 Tm
+(    const conn = await mongoose.connect\(localUri, {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 456.00 Tm
+(  26 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 456.00 Tm
+(      serverSelectionTimeoutMS: 2000,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 446.00 Tm
+(  27 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 446.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 436.00 Tm
+(  28 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 436.00 Tm
+(    console.log\(`Connected to local MongoDB instance: ${conn.connection.host}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 426.00 Tm
+(  29 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 426.00 Tm
+(    return conn;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 416.00 Tm
+(  30 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 416.00 Tm
+(  } catch \(localErr\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 406.00 Tm
+(  31 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 406.00 Tm
+(    console.log\('Local MongoDB not running or unreachable. Starting in-memory MongoDB se) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 396.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 396.00 Tm
+(rver...'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 386.00 Tm
+(  32 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 386.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 376.00 Tm
+(  33 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 376.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 366.00 Tm
+(  34 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 366.00 Tm
+(  // Fallback to MongoMemoryServer) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 356.00 Tm
+(  35 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 356.00 Tm
+(  try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 346.00 Tm
+(  36 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 346.00 Tm
+(    const { MongoMemoryServer } = require\('mongodb-memory-server'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 336.00 Tm
+(  37 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 336.00 Tm
+(    mongodInstance = await MongoMemoryServer.create\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 326.00 Tm
+(  38 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 326.00 Tm
+(    const memUri = mongodInstance.getUri\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 316.00 Tm
+(  39 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 316.00 Tm
+(    const conn = await mongoose.connect\(memUri\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 306.00 Tm
+(  40 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 306.00 Tm
+(    console.log\(`Connected to In-Memory MongoDB Server at: ${memUri}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 296.00 Tm
+(  41 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 296.00 Tm
+(    return conn;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 286.00 Tm
+(  42 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 286.00 Tm
+(  } catch \(memErr\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 276.00 Tm
+(  43 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 276.00 Tm
+(    console.error\('Fatal: Could not connect to any MongoDB instance or In-Memory server:) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 266.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 266.00 Tm
+(', memErr.message\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 256.00 Tm
+(  44 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 256.00 Tm
+(    throw memErr;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 246.00 Tm
+(  45 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 246.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 236.00 Tm
+(  46 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 236.00 Tm
+(};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 226.00 Tm
+(  47 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 226.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 216.00 Tm
+(  48 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 216.00 Tm
+(const disconnectDB = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 206.00 Tm
+(  49 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 206.00 Tm
+(  try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 196.00 Tm
+(  50 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 196.00 Tm
+(    await mongoose.disconnect\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 186.00 Tm
+(  51 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 186.00 Tm
+(    if \(mongodInstance\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 176.00 Tm
+(  52 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 176.00 Tm
+(      await mongodInstance.stop\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 166.00 Tm
+(  53 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 166.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 156.00 Tm
+(  54 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 156.00 Tm
+(  } catch \(e\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 146.00 Tm
+(  55 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 146.00 Tm
+(    console.error\('Error during DB disconnect:', e\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 136.00 Tm
+(  56 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 136.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 126.00 Tm
+(  57 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 126.00 Tm
+(};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 116.00 Tm
+(  58 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 116.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 106.00 Tm
+(  59 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 106.00 Tm
+(module.exports = { connectDB, disconnectDB };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 96.00 Tm
+(  60 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 96.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 1 of 1) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 7 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+8 0 obj
+<< /Type /Catalog /Pages 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000000313 00000 n 
+0000000413 00000 n 
+0000012129 00000 n 
+0000012291 00000 n 
+0000012348 00000 n 
+trailer
+<< /Size 9 /Root 8 0 R >>
+startxref
+12397
+%%EOF

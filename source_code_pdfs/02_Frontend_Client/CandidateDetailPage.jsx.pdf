@@ -1,0 +1,11141 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 11916 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+0.941 0.969 0.957 rg
+1 w
+0.706 0.843 0.784 RG
+40.00 730.00 515.00 54.00 re
+B
+BT
+/F2 9 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 50.00 768.00 Tm
+(FILE: C:\\HCL_TRAINING\\client\\src\\pages\\CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 7.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 50.00 755.00 Tm
+(LINES: 784  |  SIZE: 33.2 KB  |  LANGUAGE: JSX) Tj
+ET
+BT
+/F1 7.5 Tf
+0.333 0.357 0.400 rg
+1 0 0 1 50.00 742.00 Tm
+(MODULE: Deep Candidate Dossier with Evidence Citations and Score Override) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 716.00 Tm
+(   1 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 716.00 Tm
+(import React, { useState, useEffect } from 'react';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 706.00 Tm
+(   2 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 706.00 Tm
+(import { useParams, Link } from 'react-router-dom';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 696.00 Tm
+(   3 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 696.00 Tm
+(import {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 686.00 Tm
+(   4 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 686.00 Tm
+(  User,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 676.00 Tm
+(   5 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 676.00 Tm
+(  Mail,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 666.00 Tm
+(   6 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 666.00 Tm
+(  Phone,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 656.00 Tm
+(   7 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 656.00 Tm
+(  MapPin,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 646.00 Tm
+(   8 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 646.00 Tm
+(  ExternalLink,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 636.00 Tm
+(   9 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 636.00 Tm
+(  Linkedin,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 626.00 Tm
+(  10 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 626.00 Tm
+(  Github,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 616.00 Tm
+(  11 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 616.00 Tm
+(  Globe,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 606.00 Tm
+(  12 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 606.00 Tm
+(  Briefcase,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 596.00 Tm
+(  13 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 596.00 Tm
+(  GraduationCap,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 586.00 Tm
+(  14 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 586.00 Tm
+(  Sparkles,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 576.00 Tm
+(  15 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 576.00 Tm
+(  CheckCircle2,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 566.00 Tm
+(  16 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 566.00 Tm
+(  AlertTriangle,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 556.00 Tm
+(  17 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 556.00 Tm
+(  Clock,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 546.00 Tm
+(  18 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 546.00 Tm
+(  ArrowLeft,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 536.00 Tm
+(  19 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 536.00 Tm
+(  Edit,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 526.00 Tm
+(  20 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 526.00 Tm
+(  FileText,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 516.00 Tm
+(  21 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 516.00 Tm
+(  Sliders,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 506.00 Tm
+(  22 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 506.00 Tm
+(  Send,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 496.00 Tm
+(  23 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 496.00 Tm
+(  ShieldCheck,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 486.00 Tm
+(  24 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 486.00 Tm
+(  Award,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 476.00 Tm
+(  25 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 476.00 Tm
+(} from 'lucide-react';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 466.00 Tm
+(  26 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 466.00 Tm
+(import { api } from '../api/client';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 456.00 Tm
+(  27 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 456.00 Tm
+(import { ScoreBadge } from '../components/common/ScoreBadge';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 446.00 Tm
+(  28 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 446.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 436.00 Tm
+(  29 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 436.00 Tm
+(export const CandidateDetailPage = \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 426.00 Tm
+(  30 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 426.00 Tm
+(  const { candidateId } = useParams\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 416.00 Tm
+(  31 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 416.00 Tm
+(  const [data, setData] = useState\(null\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 406.00 Tm
+(  32 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 406.00 Tm
+(  const [activeTab, setActiveTab] = useState\('overview'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 396.00 Tm
+(  33 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 396.00 Tm
+(  const [loading, setLoading] = useState\(true\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 386.00 Tm
+(  34 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 386.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 376.00 Tm
+(  35 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 376.00 Tm
+(  // Correction Modal State) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 366.00 Tm
+(  36 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 366.00 Tm
+(  const [showEditModal, setShowEditModal] = useState\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 356.00 Tm
+(  37 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 356.00 Tm
+(  const [editFormData, setEditFormData] = useState\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 346.00 Tm
+(  38 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 346.00 Tm
+(    name: '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 336.00 Tm
+(  39 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 336.00 Tm
+(    email: '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 326.00 Tm
+(  40 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 326.00 Tm
+(    phone: '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 316.00 Tm
+(  41 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 316.00 Tm
+(    location: '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 306.00 Tm
+(  42 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 306.00 Tm
+(    totalExperienceYears: 0,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 296.00 Tm
+(  43 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 296.00 Tm
+(    headline: '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 286.00 Tm
+(  44 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 286.00 Tm
+(  }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 276.00 Tm
+(  45 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 276.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 266.00 Tm
+(  46 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 266.00 Tm
+(  // Manual Override State) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 256.00 Tm
+(  47 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 256.00 Tm
+(  const [showOverrideModal, setShowOverrideModal] = useState\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 246.00 Tm
+(  48 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 246.00 Tm
+(  const [overrideScreeningId, setOverrideScreeningId] = useState\(null\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 236.00 Tm
+(  49 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 236.00 Tm
+(  const [newScore, setNewScore] = useState\(85\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 226.00 Tm
+(  50 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 226.00 Tm
+(  const [overrideReason, setOverrideReason] = useState\(''\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 216.00 Tm
+(  51 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 216.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 206.00 Tm
+(  52 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 206.00 Tm
+(  // Recruiter Note State) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 196.00 Tm
+(  53 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 196.00 Tm
+(  const [noteText, setNoteText] = useState\(''\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 186.00 Tm
+(  54 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 186.00 Tm
+(  const [submittingNote, setSubmittingNote] = useState\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 176.00 Tm
+(  55 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 176.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 166.00 Tm
+(  56 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 166.00 Tm
+(  useEffect\(\(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 156.00 Tm
+(  57 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 156.00 Tm
+(    fetchCandidateDetail\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 146.00 Tm
+(  58 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 146.00 Tm
+(  }, [candidateId]\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 136.00 Tm
+(  59 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 136.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 126.00 Tm
+(  60 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 126.00 Tm
+(  const fetchCandidateDetail = async \(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 116.00 Tm
+(  61 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 116.00 Tm
+(    setLoading\(true\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 106.00 Tm
+(  62 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 106.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 96.00 Tm
+(  63 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 96.00 Tm
+(      const res = await api.get\(`/candidates/${candidateId}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 86.00 Tm
+(  64 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 86.00 Tm
+(      if \(res.success && res.data\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 76.00 Tm
+(  65 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 76.00 Tm
+(        setData\(res.data\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 66.00 Tm
+(  66 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 66.00 Tm
+(        const c = res.data.candidate;) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 1 of 13) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 12494 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+(  67 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(        setEditFormData\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+(  68 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(          name: c.name,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+(  69 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(          email: c.email,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+(  70 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(          phone: c.phone || '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+(  71 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(          location: c.location || '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+(  72 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(          totalExperienceYears: c.totalExperienceYears || 0,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+(  73 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(          headline: c.headline || '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+(  74 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(        }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+(  75 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+(  76 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+(  77 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(      console.error\(err\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+(  78 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(    } finally {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+(  79 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(      setLoading\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+(  80 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+(  81 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+(  82 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+(  83 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 620.00 Tm
+(  const handleSaveCorrection = async \(e\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+(  84 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(    e.preventDefault\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+(  85 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 600.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+(  86 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 590.00 Tm
+(      const res = await api.put\(`/candidates/${candidateId}`, editFormData\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+(  87 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 580.00 Tm
+(      if \(res.success\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+(  88 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(        setShowEditModal\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+(  89 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(        fetchCandidateDetail\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+(  90 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+(  91 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+(  92 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(      alert\(err.message || 'Failed to update candidate details'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+(  93 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+(  94 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+(  95 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+(  96 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 490.00 Tm
+(  const handleApplyOverride = async \(e\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+(  97 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(    e.preventDefault\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+(  98 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 470.00 Tm
+(    if \(!overrideReason.trim\(\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+(  99 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(      alert\('A justification reason is required for auditability.'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 100 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 450.00 Tm
+(      return;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 101 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 102 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 103 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 420.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 104 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 410.00 Tm
+(      const res = await api.patch\(`/screening/${overrideScreeningId}/override`, {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 105 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(        adjustedScore: Number\(newScore\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 106 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(        reason: overrideReason.trim\(\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 107 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(      }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 108 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 370.00 Tm
+(      if \(res.success\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 109 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(        setShowOverrideModal\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 110 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(        fetchCandidateDetail\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 111 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 112 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 113 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(      alert\(err.message || 'Override failed'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 114 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 115 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 116 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 117 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 280.00 Tm
+(  const handleAddNote = async \(e\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 118 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(    e.preventDefault\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 119 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 260.00 Tm
+(    if \(!noteText.trim\(\)\) return;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 120 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 121 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(    setSubmittingNote\(true\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 122 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 230.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 123 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 220.00 Tm
+(      const currentApp = \(data?.applications || []\)[0];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 124 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 210.00 Tm
+(      await api.post\(`/candidates/${candidateId}/notes`, {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 125 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(        text: noteText.trim\(\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 126 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(        applicationId: currentApp?._id,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 127 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(      }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 128 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(      setNoteText\(''\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 129 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(      fetchCandidateDetail\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 130 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 131 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(      alert\(err.message\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 132 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(    } finally {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 133 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(      setSubmittingNote\(false\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 134 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 135 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 136 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 137 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 80.00 Tm
+(  if \(loading\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 138 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 70.00 Tm
+(    return <div className="py-16 text-center text-xs text-ink-muted">Loading candidate p) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 2 of 13) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 13293 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 780.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 780.00 Tm
+(rofile...</div>;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 139 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 140 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 141 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 750.00 Tm
+(  if \(!data?.candidate\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 142 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 740.00 Tm
+(    return \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 143 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(      <div className="surface-card rounded-2xl p-8 text-center">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 144 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(        <p className="text-xs text-ink-muted">Candidate record not found.</p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 145 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(        <Link to="/candidates" className="text-xs text-forest-600 font-medium mt-2 inlin) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 700.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 700.00 Tm
+(e-block">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 146 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(          &larr; Back to candidates) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 147 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(        </Link>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 148 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 149 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(    \);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 150 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 151 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 152 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 630.00 Tm
+(  const { candidate, resumes, applications, screeningResults } = data;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 153 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 620.00 Tm
+(  const primaryScreening = screeningResults && screeningResults.length > 0 ? screeningRe) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 610.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 610.00 Tm
+(sults[0] : null;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 154 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 600.00 Tm
+(  const primaryResume = resumes && resumes.length > 0 ? resumes[0] : null;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 155 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 156 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 580.00 Tm
+(  // Group skills by category) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 157 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 570.00 Tm
+(  const skillsByCategory = {};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 158 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(  \(candidate.skills || []\).forEach\(\(sk\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 159 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 550.00 Tm
+(    const cat = sk.category || 'General Competencies';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 160 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 540.00 Tm
+(    if \(!skillsByCategory[cat]\) skillsByCategory[cat] = [];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 161 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(    skillsByCategory[cat].push\(sk\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 162 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(  }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 163 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 164 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 500.00 Tm
+(  return \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 165 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(    <div className="space-y-6 max-w-6xl mx-auto">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 166 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(      {/* Top Navigation */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 167 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(      <div className="flex items-center justify-between">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 168 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(        <Link to="/candidates" className="inline-flex items-center gap-1.5 text-xs text-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 450.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 450.00 Tm
+(ink-muted hover:text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 169 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(          <ArrowLeft className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 170 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(          <span>Back to candidates</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 171 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(        </Link>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 172 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 173 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(        <div className="flex items-center gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 174 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(          <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 175 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(            onClick={\(\) => setShowEditModal\(true\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 176 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-border) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 360.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 360.00 Tm
+( bg-white rounded-lg text-xs font-medium text-ink hover:bg-sage-50 transition-colors sha) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 350.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 350.00 Tm
+(dow-subtle") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 177 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(          >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 178 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(            <Edit className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 179 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(            <span>Correct Parsed Data</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 180 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(          </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 181 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 182 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 183 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 184 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(      {/* Candidate Profile Header Card */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 185 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(      <div className="surface-card rounded-2xl p-6 sm:p-8">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 186 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 187 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(          <div className="flex items-start gap-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 188 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(            <div className="w-16 h-16 rounded-2xl bg-forest-100 text-forest-800 font-edi) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 220.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 220.00 Tm
+(torial text-2xl font-bold flex items-center justify-center shrink-0 border border-forest) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 210.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 210.00 Tm
+(-200">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 189 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(              {candidate.name.charAt\(0\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 190 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 191 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 192 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(            <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 193 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(              <div className="flex items-center gap-2.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 194 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                <h1 className="font-editorial text-2xl sm:text-3xl font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 195 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                  {candidate.name}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 196 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                </h1>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 197 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-sage-100 text) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 110.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 110.00 Tm
+(-forest-800 border border-sage-300 font-mono font-medium">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 198 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                  {primaryResume?.confidenceScore || 92}% Parser Confidence) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 199 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(                </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 200 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 201 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 3 of 13) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Length 13509 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 202 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(              <p className="text-xs text-ink-muted mt-1 leading-relaxed">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 203 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                {candidate.headline || `${candidate.totalExperienceYears} Years Experien) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 760.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 760.00 Tm
+(ce`}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 204 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(              </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 205 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 206 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(              <div className="flex flex-wrap items-center gap-4 mt-3 text-xs text-ink-su) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 720.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 720.00 Tm
+(btle">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 207 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                {candidate.email && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 208 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                  <span className="flex items-center gap-1 text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 209 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(                    <Mail className="w-3.5 h-3.5 text-ink-subtle" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 210 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(                    {candidate.email}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 211 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(                  </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 212 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 213 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                {candidate.phone && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 214 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                  <span className="flex items-center gap-1 text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 215 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(                    <Phone className="w-3.5 h-3.5 text-ink-subtle" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 216 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(                    {candidate.phone}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 217 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(                  </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 218 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 219 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(                <span className="flex items-center gap-1 text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 220 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                  <MapPin className="w-3.5 h-3.5 text-ink-subtle" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 221 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                  {candidate.location || 'Remote'}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 222 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(                </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 223 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(                <span className="flex items-center gap-1 text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 224 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(                  <Clock className="w-3.5 h-3.5 text-ink-subtle" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 225 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(                  {candidate.totalExperienceYears} years exp) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 226 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(                </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 227 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 228 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 229 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(              {/* External Links */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 230 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(              {candidate.links && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 231 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(                <div className="flex items-center gap-3 mt-3 text-xs">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 232 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(                  {candidate.links.linkedin && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 233 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(                    <a) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 234 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(                      href={candidate.links.linkedin}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 235 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(                      target="_blank") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 236 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(                      rel="noreferrer") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 237 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(                      className="inline-flex items-center gap-1 text-forest-700 hover:te) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 400.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 400.00 Tm
+(xt-forest-800 font-medium") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 238 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(                    >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 239 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(                      <Linkedin className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 240 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                      <span>LinkedIn</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 241 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(                    </a>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 242 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                  \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 243 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                  {candidate.links.github && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 244 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                    <a) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 245 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                      href={candidate.links.github}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 246 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(                      target="_blank") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 247 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                      rel="noreferrer") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 248 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                      className="inline-flex items-center gap-1 text-forest-700 hover:te) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 280.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 280.00 Tm
+(xt-forest-800 font-medium") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 249 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                    >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 250 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(                      <Github className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 251 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                      <span>GitHub</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 252 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                    </a>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 253 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                  \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 254 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                  {candidate.links.portfolio && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 255 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                    <a) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 256 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                      href={candidate.links.portfolio}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 257 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                      target="_blank") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 258 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                      rel="noreferrer") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 259 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                      className="inline-flex items-center gap-1 text-forest-700 hover:te) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 160.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 160.00 Tm
+(xt-forest-800 font-medium") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 260 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                    >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 261 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                      <Globe className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 262 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                      <span>Portfolio</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 263 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                    </a>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 264 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(                  \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 265 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 266 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(              \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 267 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 268 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(          </div>) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 4 of 13) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Length 13437 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 269 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 270 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(          {/* Primary Screening Match Score Badge */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 271 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(          {primaryScreening && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 272 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(            <div className="p-4 rounded-xl bg-sage-50 border border-sage-200 text-right ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 740.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 740.00 Tm
+(min-w-[200px]">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 273 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(              <span className="text-[10px] font-semibold uppercase tracking-wider text-i) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 720.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 720.00 Tm
+(nk-subtle block mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 274 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                Target Role Match) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 275 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(              </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 276 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(              <span className="text-xs font-semibold text-ink block mb-1 truncate">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 277 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(                {primaryScreening.jobId?.title}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 278 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(              </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 279 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(              <div className="flex justify-end">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 280 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                <ScoreBadge score={primaryScreening.overallScore} size="lg" showLabel={t) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 640.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 640.00 Tm
+(rue} />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 281 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 282 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(              {primaryScreening.recruiterOverride?.isOverridden && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 283 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(                <span className="text-[10px] text-amber-700 font-medium block mt-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 284 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                  Overridden by Recruiter) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 285 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(                </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 286 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(              \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 287 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 288 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(          \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 289 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 290 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 291 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 292 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(      {/* Profile Tabs */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 293 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(      <div className="flex items-center gap-2 border-b border-border pb-px overflow-x-au) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 500.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 500.00 Tm
+(to text-xs font-medium">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 294 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(        {[) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 295 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(          { id: 'overview', label: 'Match Overview & Evidence' },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 296 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(          { id: 'timeline', label: 'Experience & Education' },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 297 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(          { id: 'skills', label: `Skills Taxonomy \(${candidate.skills?.length || 0}\)` },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 298 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(          { id: 'resume', label: 'Original Resume Document' },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 299 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(          { id: 'notes', label: 'Recruiter Notes & Audit' },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 300 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(        ].map\(\(tab\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 301 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(          <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 302 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(            key={tab.id}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 303 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(            onClick={\(\) => setActiveTab\(tab.id\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 304 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(            className={`px-4 py-2.5 border-b-2 transition-colors whitespace-nowrap ${) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 305 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(              activeTab === tab.id) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 306 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                ? 'border-forest-600 text-forest-800 font-semibold bg-sage-50/50 rounded) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 360.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 360.00 Tm
+(-t-lg') Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 307 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                : 'border-transparent text-ink-muted hover:text-ink') Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 308 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(            }`}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 309 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(          >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 310 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(            {tab.label}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 311 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(          </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 312 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(        \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 313 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 314 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 315 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(      {/* Tab 1: Match Overview & Evidence */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 316 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(      {activeTab === 'overview' && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 317 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(        <div className="space-y-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 318 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(          {primaryScreening ? \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 319 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(            <>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 320 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(              {/* Component breakdown */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 321 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(              <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 322 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                <div className="flex items-center justify-between mb-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 323 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                  <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 324 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                    <h3 className="font-editorial text-lg font-semibold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 325 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                      Explainable AI Component Breakdown) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 326 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(                    </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 327 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                    <p className="text-xs text-ink-muted">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 328 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                      Role: <span className="font-semibold text-ink">{primaryScreening.j) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 130.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 130.00 Tm
+(obId?.title}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 329 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                    </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 330 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 331 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 332 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(                  <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 333 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(                    onClick={\(\) => {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 334 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(                      setOverrideScreeningId\(primaryScreening._id\);) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 5 of 13) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Length 14134 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 335 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(                      setNewScore\(primaryScreening.overallScore\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 336 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                      setShowOverrideModal\(true\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 337 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(                    }}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 338 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-sage-50 b) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 740.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 740.00 Tm
+(order border-sage-300 rounded-lg text-xs font-medium text-forest-800 hover:bg-sage-100 t) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 730.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 730.00 Tm
+(ransition-colors") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 339 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(                  >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 340 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                    <Sliders className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 341 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                    <span>Recruiter Manual Override</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 342 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(                  </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 343 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 344 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 345 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 346 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                  <div className="p-3.5 rounded-xl bg-[#FBFBF9] border border-border">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 347 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                    <span className="text-[11px] text-ink-subtle block mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 348 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(                      Skill Alignment \(40%\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 349 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 350 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(                    <span className="font-mono text-2xl font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 351 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                      {primaryScreening.componentScores?.skillAlignment}%) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 352 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 353 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                    <span className="text-[10px] text-ink-muted block mt-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 354 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                      {primaryScreening.matchedRequiredSkills?.length || 0} mandatory sk) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 560.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 560.00 Tm
+(ills matched) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 355 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 356 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 357 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 358 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(                  <div className="p-3.5 rounded-xl bg-[#FBFBF9] border border-border">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 359 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(                    <span className="text-[11px] text-ink-subtle block mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 360 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(                      Semantic Similarity \(30%\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 361 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 362 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(                    <span className="font-mono text-2xl font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 363 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(                      {primaryScreening.componentScores?.semanticSimilarity}%) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 364 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 365 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(                    <span className="text-[10px] text-ink-muted block mt-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 366 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(                      Vector cosine document match) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 367 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 368 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 369 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 370 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(                  <div className="p-3.5 rounded-xl bg-[#FBFBF9] border border-border">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 371 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(                    <span className="text-[11px] text-ink-subtle block mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 372 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(                      Relevant Experience \(20%\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 373 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 374 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(                    <span className="font-mono text-2xl font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 375 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                      {primaryScreening.componentScores?.experienceScore}%) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 376 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 377 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                    <span className="text-[10px] text-ink-muted block mt-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 378 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                      {primaryScreening.experienceEvidence?.summary || `${candidate.tota) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 310.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 310.00 Tm
+(lExperienceYears} yrs experience`}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 379 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 380 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 381 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 382 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                  <div className="p-3.5 rounded-xl bg-[#FBFBF9] border border-border">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 383 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(                    <span className="text-[11px] text-ink-subtle block mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 384 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                      Qualification Match \(10%\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 385 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 386 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                    <span className="font-mono text-2xl font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 387 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                      {primaryScreening.componentScores?.qualificationScore}%) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 388 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 389 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                    <span className="text-[10px] text-forest-700 font-medium block mt-1") Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 190.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 190.00 Tm
+(>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 390 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                      {primaryScreening.qualificationEvidence?.matchStatus || 'Meets'} s) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 170.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 170.00 Tm
+(tandard) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 391 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 392 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 393 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 394 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 395 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                {/* Overridden Notice if active */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 396 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(                {primaryScreening.recruiterOverride?.isOverridden && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 397 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                  <div className="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-20) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 90.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 90.00 Tm
+(0 text-xs text-amber-900">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 398 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(                    <span className="font-semibold block mb-0.5">Recruiter Manual Overri) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 70.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 70.00 Tm
+(de Applied</span>) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 6 of 13) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Length 14112 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 399 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(                    <p className="text-[11px] text-amber-800">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 400 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                      Score adjusted from <span className="font-mono">{primaryScreening.) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 760.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 760.00 Tm
+(recruiterOverride.originalScore}%</span> to <span className="font-mono font-bold">{prima) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 750.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 750.00 Tm
+(ryScreening.overallScore}%</span>.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 401 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(                      Reason: "{primaryScreening.recruiterOverride.reason}") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 402 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(                    </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 403 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 404 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 405 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 406 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 407 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(              {/* Supporting Excerpts & Evidence Citations */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 408 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(              <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 409 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                <h3 className="font-editorial text-lg font-semibold text-ink mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 410 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                  Evidence Excerpts from Resume) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 411 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 412 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(                <p className="text-xs text-ink-muted mb-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 413 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(                  Direct citations extracted from candidate documents supporting the alg) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 610.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 610.00 Tm
+(orithm's assessment.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 414 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 415 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 416 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                <div className="space-y-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 417 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                  {\(primaryScreening.supportingExcerpts || []\).map\(\(exc, i\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 418 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(                    <div key={i} className="p-3.5 rounded-xl bg-[#FBFBF9] border border-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 550.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 550.00 Tm
+(border text-xs">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 419 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(                      <div className="flex items-center justify-between mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 420 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(                        <span className="font-semibold text-forest-800 text-[11px]">{exc) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 520.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 520.00 Tm
+(.topic}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 421 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(                        <span className="text-[10px] text-ink-subtle">Source: {exc.sourc) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 500.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 500.00 Tm
+(eSection}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 422 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(                      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 423 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(                      <blockquote className="italic text-ink-muted border-l-2 border-for) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 470.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 470.00 Tm
+(est-400 pl-2.5 py-0.5 leading-relaxed">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 424 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(                        "{exc.quote}") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 425 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(                      </blockquote>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 426 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(                    </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 427 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(                  \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 428 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 429 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 430 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 431 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(              {/* Matched vs Missing Skills breakdown */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 432 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 433 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                {/* Matched mandatory skills */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 434 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(                <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 435 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                  <h4 className="text-xs font-semibold uppercase tracking-wider text-for) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 340.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 340.00 Tm
+(est-700 mb-3 flex items-center gap-1.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 436 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                    <CheckCircle2 className="w-4 h-4 text-forest-600" /> Matched Mandato) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 320.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 320.00 Tm
+(ry Skills \({primaryScreening.matchedRequiredSkills?.length || 0}\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 437 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(                  </h4>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 438 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                  <div className="space-y-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 439 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                    {\(primaryScreening.matchedRequiredSkills || []\).map\(\(m, i\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 440 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(                      <div key={i} className="p-2.5 rounded-lg bg-forest-50/60 border bo) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 270.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 270.00 Tm
+(rder-forest-200 text-xs">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 441 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(                        <span className="font-semibold text-forest-900 block">{m.skill}<) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 250.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 250.00 Tm
+(/span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 442 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                        <span className="text-[11px] text-forest-800 italic block mt-0.5) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 230.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 230.00 Tm
+(">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 443 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                          "{m.evidence}") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 444 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                        </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 445 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                      </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 446 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                    \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 447 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 448 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 449 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 450 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                {/* Missing or unverified skills */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 451 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 452 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                  <h4 className="text-xs font-semibold uppercase tracking-wider text-amb) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 120.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 120.00 Tm
+(er-700 mb-3 flex items-center gap-1.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 453 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(                    <AlertTriangle className="w-4 h-4 text-amber-600" /> Missing / Unver) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 100.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 100.00 Tm
+(ified Skills \({primaryScreening.missingRequiredSkills?.length || 0}\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 454 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(                  </h4>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 455 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(                  {\(primaryScreening.missingRequiredSkills || []\).length === 0 ? \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 456 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(                    <p className="text-xs text-forest-700">All mandatory requirements ve) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 7 of 13) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Length 13695 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 780.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 780.00 Tm
+(rified in candidate text!</p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 457 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                  \) : \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 458 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(                    <div className="space-y-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 459 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(                      {primaryScreening.missingRequiredSkills.map\(\(m, i\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 460 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(                        <div key={i} className="p-2.5 rounded-lg bg-amber-50/70 border b) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 730.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 730.00 Tm
+(order-amber-200 text-xs text-amber-900">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 461 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(                          <span className="font-semibold block">{m}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 462 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                          <span className="text-[11px] text-amber-800 block mt-0.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 463 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                            Not explicitly detected in resume experience. Recommended fo) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 690.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 690.00 Tm
+(r interview probe.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 464 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(                          </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 465 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(                        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 466 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                      \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 467 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                    </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 468 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                  \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 469 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 470 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 471 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(            </>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 472 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(          \) : \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 473 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(            <div className="surface-card rounded-2xl p-8 text-center text-xs text-ink-mu) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 580.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 580.00 Tm
+(ted">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 474 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(              Candidate has not been screened against a specific job opening yet.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 475 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(              <Link to="/screening/upload" className="text-forest-600 font-medium block ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 550.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 550.00 Tm
+(mt-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 476 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(                Screen candidate against a job &rarr;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 477 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(              </Link>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 478 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 479 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(          \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 480 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 481 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 482 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 483 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(      {/* Tab 2: Experience & Education Timeline */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 484 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(      {activeTab === 'timeline' && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 485 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(        <div className="space-y-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 486 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(          {/* Work Experience */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 487 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(          <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 488 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(            <h3 className="font-editorial text-lg font-semibold text-ink mb-4 flex items) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 410.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 410.00 Tm
+(-center gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 489 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(              <Briefcase className="w-5 h-5 text-forest-600" /> Work Experience Timeline) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 490 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(            </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 491 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 492 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(            <div className="space-y-6 relative border-l-2 border-sage-200 ml-3 pl-5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 493 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(              {\(candidate.experienceTimeline || []\).map\(\(exp, index\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 494 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                <div key={index} className="relative">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 495 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                  <div className="w-3 h-3 rounded-full bg-forest-500 absolute -left-[27p) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 330.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 330.00 Tm
+(x] top-1 ring-4 ring-white" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 496 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                  <div className="flex items-center justify-between">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 497 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(                    <h4 className="text-sm font-semibold text-ink">{exp.role}</h4>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 498 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                    <span className="font-mono text-xs text-ink-subtle">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 499 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                      {exp.startDate} - {exp.endDate}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 500 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(                    </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 501 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 502 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(                  <span className="text-xs font-medium text-forest-700 block mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 503 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                    {exp.company}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 504 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                  </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 505 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                  <p className="text-xs text-ink-muted leading-relaxed mb-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 506 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                    {exp.description}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 507 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                  </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 508 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                  {exp.technologies && exp.technologies.length > 0 && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 509 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                    <div className="flex flex-wrap gap-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 510 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                      {exp.technologies.map\(\(t\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 511 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                        <span key={t} className="text-[10px] px-2 py-0.5 rounded bg-sage) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 160.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 160.00 Tm
+(-50 text-ink border border-sage-200">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 512 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                          {t}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 513 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                        </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 514 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                      \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 515 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                    </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 516 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(                  \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 517 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 518 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(              \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 519 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 520 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(          </div>) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 8 of 13) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Length 13422 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 521 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 522 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(          {/* Education */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 523 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(          <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 524 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(            <h3 className="font-editorial text-lg font-semibold text-ink mb-4 flex items) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 740.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 740.00 Tm
+(-center gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 525 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(              <GraduationCap className="w-5 h-5 text-forest-600" /> Education & Qualific) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 720.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 720.00 Tm
+(ations) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 526 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(            </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 527 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 528 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(            <div className="space-y-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 529 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(              {\(candidate.educationTimeline || []\).map\(\(edu, index\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 530 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(                <div key={index} className="p-3.5 rounded-xl bg-[#FBFBF9] border border-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 660.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 660.00 Tm
+(border text-xs flex justify-between items-center">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 531 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(                  <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 532 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(                    <span className="font-semibold text-ink block">{edu.degree}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 533 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(                    <span className="text-ink-muted">{edu.institution} &bull; {edu.field) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 620.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 620.00 Tm
+(}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 534 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 535 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                  <span className="font-mono text-xs text-forest-700 bg-sage-100 px-2 py) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 590.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 590.00 Tm
+(-0.5 rounded font-medium">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 536 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                    {edu.graduationYear}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 537 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                  </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 538 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 539 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(              \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 540 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 541 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 542 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 543 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 544 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 545 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(      {/* Tab 3: Skills Taxonomy */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 546 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(      {activeTab === 'skills' && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 547 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(        <div className="surface-card rounded-2xl p-6 space-y-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 548 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(          <h3 className="font-editorial text-lg font-semibold text-ink mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 549 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(            Categorized Skills Inventory) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 550 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(          </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 551 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(          <p className="text-xs text-ink-muted mb-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 552 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(            Technical competencies extracted and categorized by domain.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 553 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(          </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 554 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 555 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 556 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(            {Object.entries\(skillsByCategory\).map\(\([category, skills]\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 557 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(              <div key={category} className="p-4 rounded-xl bg-[#FBFBF9] border border-b) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 360.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 360.00 Tm
+(order">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 558 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                <span className="text-xs font-semibold text-forest-800 uppercase trackin) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 340.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 340.00 Tm
+(g-wider block mb-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 559 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                  {category} \({skills.length}\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 560 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 561 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(                <div className="flex flex-wrap gap-1.5">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 562 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                  {skills.map\(\(s\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 563 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                    <div) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 564 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(                      key={s.name}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 565 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 260.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 260.00 Tm
+( bg-white border border-border text-xs") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 566 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                    >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 567 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                      <span className="font-medium text-ink">{s.name}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 568 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                      <span className="font-mono text-[10px] text-ink-subtle">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 569 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                        {s.yearsOfExperience}y) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 570 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                      </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 571 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                    </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 572 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                  \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 573 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 574 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 575 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(            \)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 576 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 577 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 578 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 579 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 580 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(      {/* Tab 4: Original Resume Text */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 581 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(      {activeTab === 'resume' && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 582 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(        <div className="surface-card rounded-2xl p-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 583 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(          <div className="flex items-center justify-between pb-3 border-b border-border ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 70.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 70.00 Tm
+(mb-4">) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 9 of 13) Tj
+ET
+endstream
+endobj
+14 0 obj
+<< /Length 13595 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 584 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(            <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 585 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(              <h3 className="font-editorial text-lg font-semibold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 586 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(                Raw Extracted Resume Document) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 587 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(              </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 588 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(              <span className="text-xs text-ink-muted">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 589 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(                File: {primaryResume?.fileName || 'resume.pdf'} &bull; Hash: <span class) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 720.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 720.00 Tm
+(Name="font-mono text-[11px]">{primaryResume?.fileHash?.slice\(0, 16\)}...</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 590 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(              </span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 591 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 592 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 593 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 594 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(          <pre className="p-4 rounded-xl bg-[#F8F9F5] border border-border text-xs font-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 660.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 660.00 Tm
+(mono text-ink-light whitespace-pre-wrap leading-relaxed max-h-96 overflow-y-auto">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 595 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(            {primaryResume?.rawText || 'No raw text available.'}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 596 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(          </pre>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 597 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 598 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 599 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 600 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(      {/* Tab 5: Recruiter Notes & Audit */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 601 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(      {activeTab === 'notes' && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 602 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(        <div className="surface-card rounded-2xl p-6 space-y-6">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 603 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(          <h3 className="font-editorial text-lg font-semibold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 604 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(            Recruiter Notes & Interaction Log) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 605 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(          </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 606 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 607 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(          {/* Add note */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 608 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(          <form onSubmit={handleAddNote} className="space-y-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 609 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(            <textarea) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 610 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(              rows={3}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 611 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(              placeholder="Write an internal recruiter observation, interview feedback, ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 480.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 480.00 Tm
+(or verification detail...") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 612 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(              value={noteText}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 613 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(              onChange={\(e\) => setNoteText\(e.target.value\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 614 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(              className="w-full bg-[#FBFBF9] border border-border rounded-xl p-3 text-xs) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 440.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 440.00 Tm
+( text-ink focus:outline-none focus:border-forest-500 focus:bg-white transition-all leadi) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 430.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 430.00 Tm
+(ng-relaxed") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 615 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(            />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 616 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(            <div className="flex justify-end">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 617 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(              <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 618 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(                type="submit") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 619 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(                disabled={submittingNote || !noteText.trim\(\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 620 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                className="px-4 py-2 bg-forest-500 hover:bg-forest-600 text-white rounde) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 360.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 360.00 Tm
+(d-lg text-xs font-medium flex items-center gap-1.5 shadow-sm disabled:opacity-50") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 621 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(              >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 622 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                <Send className="w-3.5 h-3.5" />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 623 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                <span>Save Note</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 624 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(              </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 625 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(            </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 626 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(          </form>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 627 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 628 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(          {/* Existing notes */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 629 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(          <div className="space-y-3 pt-3 border-t border-border">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 630 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(            {\(applications || []\).flatMap\(\(app\) => app.notes || []\).length === 0 ? \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 631 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(              <p className="text-xs text-ink-subtle text-center py-4">No notes recorded ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 240.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 240.00 Tm
+(yet.</p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 632 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(            \) : \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 633 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(              \(applications || []\).flatMap\(\(app\) => app.notes || []\).map\(\(n, idx\) => \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 634 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                <div key={idx} className="p-3 rounded-xl bg-[#FBFBF9] border border-bord) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 200.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 200.00 Tm
+(er text-xs">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 635 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                  <div className="flex items-center justify-between text-ink-subtle text) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 180.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 180.00 Tm
+(-[10px] mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 636 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                    <span className="font-medium text-ink">Recruiter Note</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 637 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(                    <span>{new Date\(n.createdAt\).toLocaleDateString\(\)}</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 638 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(                  </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 639 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                  <p className="text-ink leading-relaxed">{n.text}</p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 640 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(                </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 641 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(              \)\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 642 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(            \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 643 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 644 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 645 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 646 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 10 of 13) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Length 13375 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 647 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(      {/* Correction Modal */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 648 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(      {showEditModal && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 649 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(        <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-cente) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 750.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 750.00 Tm
+(r justify-center p-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 650 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(          <div className="bg-white rounded-2xl shadow-dropdown border border-border max-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 730.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 730.00 Tm
+(w-md w-full p-6 space-y-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 651 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(            <h3 className="font-editorial text-lg font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 652 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(              Correct Extracted Candidate Data) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 653 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(            </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 654 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(            <p className="text-xs text-ink-muted">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 655 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(              Manually fix OCR or parser errors. All corrections are logged to the compl) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 670.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 670.00 Tm
+(iance audit trail.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 656 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(            </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 657 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 658 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(            <form onSubmit={handleSaveCorrection} className="space-y-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 659 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(              <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 660 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(                <label className="block text-xs font-medium text-ink mb-1">Full Name</la) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 610.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 610.00 Tm
+(bel>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 661 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(                <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 662 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(                  type="text") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 663 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(                  required) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 664 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(                  value={editFormData.name}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 665 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(                  onChange={\(e\) => setEditFormData\({ ...editFormData, name: e.target.val) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 550.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 550.00 Tm
+(ue }\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 666 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(                  className="w-full bg-[#FBFBF9] border border-border rounded-lg px-3 py) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 530.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 530.00 Tm
+(-1.5 text-xs text-ink") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 667 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(                />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 668 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 669 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 670 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(              <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 671 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(                <label className="block text-xs font-medium text-ink mb-1">Email</label>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 672 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(                <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 673 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(                  type="email") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 674 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(                  value={editFormData.email}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 675 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(                  onChange={\(e\) => setEditFormData\({ ...editFormData, email: e.target.va) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 430.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 430.00 Tm
+(lue }\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 676 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(                  className="w-full bg-[#FBFBF9] border border-border rounded-lg px-3 py) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 410.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 410.00 Tm
+(-1.5 text-xs text-ink") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 677 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(                />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 678 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 679 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 680 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(              <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 681 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(                <label className="block text-xs font-medium text-ink mb-1">Total Experie) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 350.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 350.00 Tm
+(nce \(Years\)</label>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 682 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 683 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                  type="number") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 684 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                  min={0}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 685 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(                  max={40}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 686 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(                  value={editFormData.totalExperienceYears}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 687 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(                  onChange={\(e\) => setEditFormData\({ ...editFormData, totalExperienceYea) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 280.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 280.00 Tm
+(rs: Number\(e.target.value\) }\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 688 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                  className="w-full bg-[#FBFBF9] border border-border rounded-lg px-3 py) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 260.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 260.00 Tm
+(-1.5 text-xs text-ink font-mono") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 689 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 690 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 691 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 692 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(              <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 693 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(                <label className="block text-xs font-medium text-ink mb-1">Location</lab) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 200.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 200.00 Tm
+(el>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 694 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 695 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                  type="text") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 696 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(                  value={editFormData.location}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 697 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(                  onChange={\(e\) => setEditFormData\({ ...editFormData, location: e.target) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 150.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 150.00 Tm
+(.value }\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 698 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(                  className="w-full bg-[#FBFBF9] border border-border rounded-lg px-3 py) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 130.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 130.00 Tm
+(-1.5 text-xs text-ink") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 699 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 700 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 701 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 702 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(              <div className="pt-2 flex justify-end gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 703 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 80.00 Tm
+(                <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 704 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(                  type="button") Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 11 of 13) Tj
+ET
+endstream
+endobj
+16 0 obj
+<< /Length 13403 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 705 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(                  onClick={\(\) => setShowEditModal\(false\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 706 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                  className="px-3.5 py-1.5 border border-border rounded-lg text-xs font-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 760.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 760.00 Tm
+(medium text-ink hover:bg-sage-50") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 707 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(                >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 708 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(                  Cancel) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 709 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(                </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 710 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(                <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 711 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                  type="submit") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 712 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                  className="px-4 py-1.5 bg-forest-500 hover:bg-forest-600 text-white ro) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 690.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 690.00 Tm
+(unded-lg text-xs font-medium") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 713 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(                >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 714 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(                  Save Corrections) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 715 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(                </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 716 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 717 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(            </form>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 718 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 719 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 720 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 721 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 722 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(      {/* Manual Override Modal */}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 723 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(      {showOverrideModal && \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 724 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(        <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-cente) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 560.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 560.00 Tm
+(r justify-center p-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 725 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(          <div className="bg-white rounded-2xl shadow-dropdown border border-border max-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 540.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 540.00 Tm
+(w-md w-full p-6 space-y-4">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 726 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(            <h3 className="font-editorial text-lg font-bold text-ink">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 727 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(              Recruiter Score Override) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 728 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(            </h3>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 729 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(            <p className="text-xs text-ink-muted">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 730 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(              Recruiters remain final decision-makers. Override the AI calculated score ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 480.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 480.00 Tm
+(with an explicit justification reason.) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 731 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(            </p>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 732 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 733 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(            <form onSubmit={handleApplyOverride} className="space-y-3">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 734 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(              <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 735 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(                <label className="block text-xs font-medium text-ink mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 736 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(                  Adjusted Score: <span className="font-mono font-bold text-forest-700">) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 410.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 410.00 Tm
+({newScore}%</span>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 737 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(                </label>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 738 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(                <input) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 739 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(                  type="range") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 740 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(                  min={10}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 741 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(                  max={100}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 742 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(                  value={newScore}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 743 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(                  onChange={\(e\) => setNewScore\(Number\(e.target.value\)\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 744 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(                  className="w-full accent-forest-500") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 745 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(                />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 746 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 747 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 748 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(              <div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 749 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(                <label className="block text-xs font-medium text-ink mb-1">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 750 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(                  Reason for Override *) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 751 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(                </label>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 752 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(                <textarea) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 753 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(                  rows={3}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 754 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(                  required) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 755 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(                  placeholder="e.g. Candidate demonstrated verified equivalence in speci) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 210.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 210.00 Tm
+(alized microservices during portfolio review...") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 756 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(                  value={overrideReason}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 757 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(                  onChange={\(e\) => setOverrideReason\(e.target.value\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 758 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(                  className="w-full bg-[#FBFBF9] border border-border rounded-lg p-2.5 t) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 170.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 170.00 Tm
+(ext-xs text-ink focus:outline-none focus:border-forest-500") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 759 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(                />) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 760 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 761 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 762 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(              <div className="pt-2 flex justify-end gap-2">) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 763 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(                <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 764 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(                  type="button") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 765 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(                  onClick={\(\) => setShowOverrideModal\(false\)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 766 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+(                  className="px-3.5 py-1.5 border border-border rounded-lg text-xs font-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 80.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 80.00 Tm
+(medium text-ink hover:bg-sage-50") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 767 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(                >) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 12 of 13) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Length 3511 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: CandidateDetailPage.jsx) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 768 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(                  Cancel) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 769 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(                </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 770 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(                <button) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 771 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+(                  type="submit") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 772 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+(                  className="px-4 py-1.5 bg-forest-500 hover:bg-forest-600 text-white ro) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 730.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 730.00 Tm
+(unded-lg text-xs font-medium") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 773 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(                >) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 774 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(                  Confirm Override) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 775 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(                </button>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 776 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(              </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 777 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(            </form>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 778 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(          </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 779 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+(        </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 780 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 650.00 Tm
+(      \)}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 781 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(    </div>) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 782 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(  \);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 783 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 784 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 13 of 13) Tj
+ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 5 0 R >>
+endobj
+19 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R >>
+endobj
+20 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 7 0 R >>
+endobj
+21 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 8 0 R >>
+endobj
+22 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R >>
+endobj
+23 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 10 0 R >>
+endobj
+24 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 11 0 R >>
+endobj
+25 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 12 0 R >>
+endobj
+26 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 13 0 R >>
+endobj
+27 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 14 0 R >>
+endobj
+28 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 15 0 R >>
+endobj
+29 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 16 0 R >>
+endobj
+30 0 obj
+<< /Type /Page /Parent 31 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 17 0 R >>
+endobj
+31 0 obj
+<< /Type /Pages /Kids [18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R] /Count 13 >>
+endobj
+32 0 obj
+<< /Type /Catalog /Pages 31 0 R >>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000000313 00000 n 
+0000000413 00000 n 
+0000012382 00000 n 
+0000024929 00000 n 
+0000038275 00000 n 
+0000051837 00000 n 
+0000065327 00000 n 
+0000079515 00000 n 
+0000093681 00000 n 
+0000107430 00000 n 
+0000120906 00000 n 
+0000134555 00000 n 
+0000147984 00000 n 
+0000161441 00000 n 
+0000165005 00000 n 
+0000165169 00000 n 
+0000165333 00000 n 
+0000165497 00000 n 
+0000165661 00000 n 
+0000165825 00000 n 
+0000165990 00000 n 
+0000166155 00000 n 
+0000166320 00000 n 
+0000166485 00000 n 
+0000166650 00000 n 
+0000166815 00000 n 
+0000166980 00000 n 
+0000167145 00000 n 
+0000167289 00000 n 
+trailer
+<< /Size 33 /Root 32 0 R >>
+startxref
+167340
+%%EOF

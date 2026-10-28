@@ -1,0 +1,4333 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 12099 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: textExtractor.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+0.941 0.969 0.957 rg
+1 w
+0.706 0.843 0.784 RG
+40.00 730.00 515.00 54.00 re
+B
+BT
+/F2 9 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 50.00 768.00 Tm
+(FILE: C:\\HCL_TRAINING\\server\\src\\services\\resumeParser\\textExtractor.js) Tj
+ET
+BT
+/F1 7.5 Tf
+0.200 0.220 0.259 rg
+1 0 0 1 50.00 755.00 Tm
+(LINES: 316  |  SIZE: 10.0 KB  |  LANGUAGE: JS) Tj
+ET
+BT
+/F1 7.5 Tf
+0.333 0.357 0.400 rg
+1 0 0 1 50.00 742.00 Tm
+(MODULE: PDF, DOCX, TXT Parsing & SHA-256 Deduplication Fingerprinting) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 716.00 Tm
+(   1 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 716.00 Tm
+(const fs = require\('fs'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 706.00 Tm
+(   2 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 706.00 Tm
+(const path = require\('path'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 696.00 Tm
+(   3 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 696.00 Tm
+(const crypto = require\('crypto'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 686.00 Tm
+(   4 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 686.00 Tm
+(const pdfParse = require\('pdf-parse'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 676.00 Tm
+(   5 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 676.00 Tm
+(const mammoth = require\('mammoth'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 666.00 Tm
+(   6 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 666.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 656.00 Tm
+(   7 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 656.00 Tm
+(/**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 646.00 Tm
+(   8 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 646.00 Tm
+( * Calculates SHA-256 hash of a file buffer) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 636.00 Tm
+(   9 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 636.00 Tm
+( */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 626.00 Tm
+(  10 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 626.00 Tm
+(function calculateFileHash\(buffer\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 616.00 Tm
+(  11 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 616.00 Tm
+(  return crypto.createHash\('sha256'\).update\(buffer\).digest\('hex'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 606.00 Tm
+(  12 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 606.00 Tm
+(}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 596.00 Tm
+(  13 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 596.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 586.00 Tm
+(  14 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 586.00 Tm
+(/**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 576.00 Tm
+(  15 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 576.00 Tm
+( * Extracts plain text from PDF, DOCX, or text file) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 566.00 Tm
+(  16 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 566.00 Tm
+( */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 556.00 Tm
+(  17 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 556.00 Tm
+(async function extractRawText\(filePath, mimeType\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 546.00 Tm
+(  18 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 546.00 Tm
+(  const buffer = fs.readFileSync\(filePath\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 536.00 Tm
+(  19 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 536.00 Tm
+(  const ext = path.extname\(filePath\).toLowerCase\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 526.00 Tm
+(  20 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 526.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 516.00 Tm
+(  21 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 516.00 Tm
+(  let text = '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 506.00 Tm
+(  22 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 506.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 496.00 Tm
+(  23 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 496.00 Tm
+(  if \(ext === '.pdf' || mimeType === 'application/pdf'\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 486.00 Tm
+(  24 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 486.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 476.00 Tm
+(  25 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 476.00 Tm
+(      const data = await pdfParse\(buffer\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 466.00 Tm
+(  26 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 466.00 Tm
+(      text = data.text || '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 456.00 Tm
+(  27 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 456.00 Tm
+(      if \(!text || text.trim\(\).length < 40\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 446.00 Tm
+(  28 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 446.00 Tm
+(        throw new Error\('PDF appears to be scanned or contains only images without selec) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 436.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 436.00 Tm
+(table text layer.'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 426.00 Tm
+(  29 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 426.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 416.00 Tm
+(  30 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 416.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 406.00 Tm
+(  31 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 406.00 Tm
+(      if \(err.message.includes\('scanned'\)\) throw err;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 396.00 Tm
+(  32 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 396.00 Tm
+(      throw new Error\(`Failed to parse PDF document: ${err.message}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 386.00 Tm
+(  33 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 386.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 376.00 Tm
+(  34 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 376.00 Tm
+(  } else if \(ext === '.docx' || mimeType.includes\('wordprocessingml'\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 366.00 Tm
+(  35 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 366.00 Tm
+(    try {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 356.00 Tm
+(  36 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 356.00 Tm
+(      const result = await mammoth.extractRawText\({ buffer }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 346.00 Tm
+(  37 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 346.00 Tm
+(      text = result.value || '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 336.00 Tm
+(  38 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 336.00 Tm
+(    } catch \(err\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 326.00 Tm
+(  39 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 326.00 Tm
+(      throw new Error\(`Failed to extract text from DOCX: ${err.message}`\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 316.00 Tm
+(  40 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 316.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 306.00 Tm
+(  41 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 306.00 Tm
+(  } else {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 296.00 Tm
+(  42 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 296.00 Tm
+(    // Plain text / markdown) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 286.00 Tm
+(  43 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 286.00 Tm
+(    text = buffer.toString\('utf-8'\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 276.00 Tm
+(  44 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 276.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 266.00 Tm
+(  45 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 266.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 256.00 Tm
+(  46 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 256.00 Tm
+(  // Normalize newlines and spaces) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 246.00 Tm
+(  47 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 246.00 Tm
+(  const cleanText = text) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 236.00 Tm
+(  48 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 236.00 Tm
+(    .replace\(/\\r\\n/g, '\\n'\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 226.00 Tm
+(  49 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 226.00 Tm
+(    .replace\(/\\r/g, '\\n'\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 216.00 Tm
+(  50 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 216.00 Tm
+(    .replace\(/[ \\t]+/g, ' '\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 206.00 Tm
+(  51 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 206.00 Tm
+(    .trim\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 196.00 Tm
+(  52 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 196.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 186.00 Tm
+(  53 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 186.00 Tm
+(  return {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 176.00 Tm
+(  54 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 176.00 Tm
+(    rawText: cleanText,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 166.00 Tm
+(  55 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 166.00 Tm
+(    fileHash: calculateFileHash\(buffer\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 156.00 Tm
+(  56 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 156.00 Tm
+(    fileSize: buffer.length,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 146.00 Tm
+(  57 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 146.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 136.00 Tm
+(  58 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 136.00 Tm
+(}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 126.00 Tm
+(  59 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 126.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 116.00 Tm
+(  60 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 116.00 Tm
+(/**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 106.00 Tm
+(  61 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 106.00 Tm
+( * Extracts candidate basic contact info, education, and experience from text) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 96.00 Tm
+(  62 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 96.00 Tm
+( */) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 86.00 Tm
+(  63 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 86.00 Tm
+(function parseResumeEntities\(text\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 76.00 Tm
+(  64 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 76.00 Tm
+(  const lines = text.split\('\\n'\).map\(\(l\) => l.trim\(\)\).filter\(Boolean\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 66.00 Tm
+(  65 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 66.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 1 of 5) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 13658 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: textExtractor.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+(  66 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 780.00 Tm
+(  // 1. Email extraction) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+(  67 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 770.00 Tm
+(  const emailRegex = /\([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\)/g;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+(  68 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 760.00 Tm
+(  const emailMatch = text.match\(emailRegex\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+(  69 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 750.00 Tm
+(  const email = emailMatch ? emailMatch[0].toLowerCase\(\) : '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+(  70 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 740.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+(  71 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 730.00 Tm
+(  // 2. Phone extraction) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+(  72 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 720.00 Tm
+(  const phoneRegex = /\(?:\(?:\\+?1\\s*\(?:[.-]\\s*\)?\)?\(?:\\\(\\s*\([2-9]1[02-9]|[2-9][02-8]1|[2-9) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 710.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 710.00 Tm
+(][02-8][02-9]\)\\s*\\\)|\([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]\)\)\\s*\(?:[.-]\\s*\)?\)?\([2-9) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 700.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 700.00 Tm
+(]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2}\)\\s*\(?:[.-]\\s*\)?\([0-9]{4}\)\(?:\\s*\(?:#|x\\.?|ext\\.?|ext) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 690.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 690.00 Tm
+(ension\)\\s*\(\\d+\)\)?|\(\\+?\\d{1,3}[-.\\s]?\\\(?\\d{2,4}\\\)?[-.\\s]?\\d{3,4}[-.\\s]?\\d{3,4}\)/g;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+(  73 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 680.00 Tm
+(  const phoneMatch = text.match\(phoneRegex\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+(  74 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 670.00 Tm
+(  const phone = phoneMatch ? phoneMatch[0].trim\(\) : '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+(  75 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+(  76 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 650.00 Tm
+(  // 3. Links \(LinkedIn, GitHub, Portfolio\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+(  77 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 640.00 Tm
+(  const linkedinMatch = text.match\(/\(?:https?:\\/\\/\)?\(?:www\\.\)?linkedin\\.com\\/in\\/\([a-zA-) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 630.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 630.00 Tm
+(Z0-9_-]+\)/i\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+(  78 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 620.00 Tm
+(  const githubMatch = text.match\(/\(?:https?:\\/\\/\)?\(?:www\\.\)?github\\.com\\/\([a-zA-Z0-9_-]+) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 610.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 610.00 Tm
+(\)/i\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+(  79 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 600.00 Tm
+(  const portfolioMatch = text.match\(/\(?:https?:\\/\\/\)?\([a-zA-Z0-9_-]+\\.\(?:dev|me|io|com|o) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 590.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 590.00 Tm
+(rg\)\)\(?:\\/[^\\s]*\)?/i\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+(  80 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+(  81 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 570.00 Tm
+(  const links = {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+(  82 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+(    linkedin: linkedinMatch ? linkedinMatch[0] : '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+(  83 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(    github: githubMatch ? githubMatch[0] : '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+(  84 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(    portfolio: portfolioMatch && !portfolioMatch[0].includes\('linkedin'\) && !portfolioMa) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 530.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 530.00 Tm
+(tch[0].includes\('github'\) ? portfolioMatch[0] : '',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+(  85 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+(  86 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+(  87 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 500.00 Tm
+(  // 4. Candidate Name: Usually first 1-3 lines before email / phone) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+(  88 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 490.00 Tm
+(  let name = 'Candidate';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+(  89 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(  for \(let i = 0; i < Math.min\(lines.length, 5\); i++\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+(  90 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 470.00 Tm
+(    const line = lines[i];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+(  91 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 460.00 Tm
+(    if \() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+(  92 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(      line.length > 2 &&) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+(  93 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(      line.length < 40 &&) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+(  94 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(      !line.includes\('@'\) &&) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+(  95 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(      !line.match\(/\\d{5,}/\) &&) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+(  96 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(      !line.toLowerCase\(\).includes\('resume'\) &&) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+(  97 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(      !line.toLowerCase\(\).includes\('curriculum'\) &&) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+(  98 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(      !line.toLowerCase\(\).includes\('http'\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+(  99 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(    \) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 100 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(      name = line.replace\(/[^a-zA-Z\\s.'-]/g, ''\).trim\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 101 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 360.00 Tm
+(      if \(name.split\(/\\s+/\).length >= 1 && name.length > 2\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 102 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(        break;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 103 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 104 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 105 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 106 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 107 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 300.00 Tm
+(  // 5. Total Years of Experience estimation) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 108 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 290.00 Tm
+(  let totalExperienceYears = 0;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 109 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 280.00 Tm
+(  // Look for "X+ years of experience") Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 110 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 270.00 Tm
+(  const expMatch = text.match\(/\(\\d+\)\\+?\\s*years?\(?:\\s+of\)?\\s+\(?:experience|working\)/i\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 111 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 260.00 Tm
+(  if \(expMatch && parseInt\(expMatch[1], 10\) < 35\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 112 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(    totalExperienceYears = parseInt\(expMatch[1], 10\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 113 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(  } else {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 114 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 230.00 Tm
+(    // Estimate by counting year intervals \(e.g. 2018 - 2023, 2021 - Present\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 115 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 220.00 Tm
+(    const yearRangeRegex = /\(20\\d{2}|19\\d{2}\)\\s*\(?:-|–|—|to\)\\s*\(20\\d{2}|present|current\)) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 210.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 210.00 Tm
+(/gi;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 116 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 200.00 Tm
+(    let match;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 117 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 190.00 Tm
+(    let minYear = 2050;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 118 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 180.00 Tm
+(    let maxYear = 1970;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 119 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 170.00 Tm
+(    const currentYear = new Date\(\).getFullYear\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 120 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 121 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(    while \(\(match = yearRangeRegex.exec\(text\)\) !== null\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 122 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 140.00 Tm
+(      const start = parseInt\(match[1], 10\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 123 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 130.00 Tm
+(      const end = match[2].toLowerCase\(\).includes\('present'\) || match[2].toLowerCase\(\).i) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 120.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 120.00 Tm
+(ncludes\('current'\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 124 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(        ? currentYear) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 125 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+(        : parseInt\(match[2], 10\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 126 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 90.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 127 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 80.00 Tm
+(      if \(start >= 1980 && start <= currentYear && end >= start\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 128 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 70.00 Tm
+(        minYear = Math.min\(minYear, start\);) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 2 of 5) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Length 12447 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: textExtractor.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 129 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 780.00 Tm
+(        maxYear = Math.max\(maxYear, end\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 130 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 770.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 131 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 132 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 750.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 133 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 740.00 Tm
+(    if \(minYear <= currentYear && maxYear >= minYear\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 134 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(      totalExperienceYears = Math.min\(maxYear - minYear, 30\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 135 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 136 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 710.00 Tm
+(    if \(totalExperienceYears === 0\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 137 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(      totalExperienceYears = 3; // sensible default) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 138 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 139 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 140 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 141 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 660.00 Tm
+(  // 6. Education detection) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 142 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 650.00 Tm
+(  const educationTimeline = [];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 143 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 640.00 Tm
+(  const eduKeywords = [) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 144 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(    { degree: "Ph.D.", pattern: /\(?:ph\\.?d\\.?|doctor\\s+of\\s+philosophy\)/i },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 145 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(    { degree: "Master's Degree \(M.S. / M.Tech / M.Sc\)", pattern: /\(?:master|m\\.s\\.|m\\.te) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 610.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 610.00 Tm
+(ch|m\\.sc|msc|mba\)/i },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 146 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(    { degree: "Bachelor's Degree \(B.S. / B.Tech / B.E.\)", pattern: /\(?:bachelor|b\\.s\\.|b) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 590.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 590.00 Tm
+(\\.tech|b\\.e\\.|bsc|b\\.a\\.\)/i },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 147 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(    { degree: "Associate Degree / Diploma", pattern: /\(?:associate|diploma\)/i },) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 148 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+(  ];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 149 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 560.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 150 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+(  for \(const item of eduKeywords\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 151 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 540.00 Tm
+(    if \(item.pattern.test\(text\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 152 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(      educationTimeline.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 153 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(        degree: item.degree,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 154 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(        institution: 'University / Institute',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 155 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(        field: 'Computer Science / Engineering / Design',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 156 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(        graduationYear: 'Graduated',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 157 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(      }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 158 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(      break; // Record primary degree level) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 159 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 160 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 161 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 162 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 430.00 Tm
+(  if \(educationTimeline.length === 0\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 163 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(    educationTimeline.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 164 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(      degree: "Bachelor's Degree \(Equivalent\)",) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 165 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(      institution: 'Recognized University',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 166 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(      field: 'Relevant Domain',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 167 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(      graduationYear: 'Graduated',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 168 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 169 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 170 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 171 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 340.00 Tm
+(  // 7. Work timeline heuristic segmentation) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 172 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 330.00 Tm
+(  const experienceTimeline = extractTimelineSections\(lines, text\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 173 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 174 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 310.00 Tm
+(  // 8. Quality Analyzer) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 175 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 300.00 Tm
+(  const qualityIssues = analyzeResumeQuality\(text, {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 176 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(    name,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 177 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(    email,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 178 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(    phone,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 179 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(    totalExperienceYears,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 180 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(    educationTimeline,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 181 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(    experienceTimeline,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 182 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(  }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 183 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 184 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 210.00 Tm
+(  return {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 185 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(    name,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 186 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(    email,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 187 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(    phone,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 170.00 Tm
+( 188 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 170.00 Tm
+(    links,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 189 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(    totalExperienceYears,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 190 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(    educationTimeline,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 191 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(    experienceTimeline,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 192 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+(    qualityIssues,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 193 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 120.00 Tm
+(  };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 194 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 195 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 196 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 90.00 Tm
+(/**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 197 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 80.00 Tm
+( * Extracts approximate work experience blocks) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 198 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 70.00 Tm
+( */) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 3 of 5) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Length 12763 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: textExtractor.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 199 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 780.00 Tm
+(function extractTimelineSections\(lines, fullText\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 200 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 770.00 Tm
+(  const timeline = [];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 201 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 760.00 Tm
+(  const datePattern = /\(?:\(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec\)[a-z]*\\.?\\s+\)) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 750.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 750.00 Tm
+(?\(20\\d{2}|19\\d{2}\)\\s*\(?:-|–|—|to\)\\s*\(?:\(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec\)) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 740.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 740.00 Tm
+([a-z]*\\.?\\s+\)?\(20\\d{2}|present|current\)/i;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 202 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 203 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 720.00 Tm
+(  let currentEntry = null;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 204 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 205 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(  for \(let i = 0; i < lines.length; i++\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 206 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 690.00 Tm
+(    const line = lines[i];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 207 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 680.00 Tm
+(    const match = line.match\(datePattern\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 208 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 209 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 660.00 Tm
+(    if \(match\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 210 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 650.00 Tm
+(      if \(currentEntry\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 211 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(        timeline.push\(currentEntry\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 212 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 213 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 214 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 610.00 Tm
+(      // Try to get role and company from nearby lines) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 215 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 600.00 Tm
+(      const prevLine = i > 0 ? lines[i - 1] : '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 216 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 590.00 Tm
+(      const nextLine = i + 1 < lines.length ? lines[i + 1] : '';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 217 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 218 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 570.00 Tm
+(      let role = prevLine.length < 60 ? prevLine : 'Software Engineer';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 219 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 560.00 Tm
+(      let company = 'Enterprise Technology';) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 220 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 550.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 221 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 540.00 Tm
+(      if \(role.includes\(' at '\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 222 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 530.00 Tm
+(        const parts = role.split\(' at '\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 223 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(        role = parts[0].trim\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 224 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(        company = parts[1].trim\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 500.00 Tm
+( 225 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 500.00 Tm
+(      } else if \(role.includes\(' - '\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 226 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 490.00 Tm
+(        const parts = role.split\(' - '\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 480.00 Tm
+( 227 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 480.00 Tm
+(        role = parts[0].trim\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 228 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(        company = parts[1].trim\(\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 229 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(      }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 230 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 231 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 440.00 Tm
+(      currentEntry = {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 232 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 430.00 Tm
+(        role: role.length > 5 ? role : 'Senior Specialist',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 420.00 Tm
+( 233 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 420.00 Tm
+(        company: company,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 234 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(        startDate: match[0].split\(/-|–|—|to/i\)[0].trim\(\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 235 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(        endDate: match[0].split\(/-|–|—|to/i\)[1].trim\(\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 236 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(        isCurrent: match[0].toLowerCase\(\).includes\('present'\) || match[0].toLowerCase\(\).) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 380.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 380.00 Tm
+(includes\('current'\),) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 370.00 Tm
+( 237 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 370.00 Tm
+(        description: nextLine.length > 30 ? nextLine : 'Designed and developed high-impa) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 360.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 360.00 Tm
+(ct features and services.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 350.00 Tm
+( 238 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 350.00 Tm
+(        technologies: [],) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 239 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(      };) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 240 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(    }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 241 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 242 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 310.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 243 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 300.00 Tm
+(  if \(currentEntry\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 244 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+(    timeline.push\(currentEntry\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 245 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 246 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 247 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 260.00 Tm
+(  // Fallback if no dates matched nicely) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 248 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 250.00 Tm
+(  if \(timeline.length === 0\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 249 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(    timeline.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 250 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+(      role: 'Software Engineer',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 220.00 Tm
+( 251 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 220.00 Tm
+(      company: 'Technology Solutions',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 210.00 Tm
+( 252 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 210.00 Tm
+(      startDate: '2020',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 200.00 Tm
+( 253 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 200.00 Tm
+(      endDate: 'Present',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 190.00 Tm
+( 254 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 190.00 Tm
+(      isCurrent: true,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 180.00 Tm
+( 255 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 180.00 Tm
+(      description: 'Full stack development, cloud microservices, and system architecture) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 170.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 170.00 Tm
+(.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 160.00 Tm
+( 256 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 160.00 Tm
+(      technologies: [],) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 150.00 Tm
+( 257 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 150.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 140.00 Tm
+( 258 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 140.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 130.00 Tm
+( 259 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 130.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 120.00 Tm
+( 260 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 120.00 Tm
+(  return timeline;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 110.00 Tm
+( 261 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 110.00 Tm
+(}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 100.00 Tm
+( 262 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 100.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 90.00 Tm
+( 263 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 90.00 Tm
+(/**) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 80.00 Tm
+( 264 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 80.00 Tm
+( * Resume Quality Analyzer \(Section 4, Feature 1\)) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 70.00 Tm
+( 265 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 70.00 Tm
+( */) Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 4 of 5) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Length 9892 >>
+stream
+0.969 0.969 0.957 rg
+0.7 w
+0.886 0.894 0.871 RG
+40.00 800.00 515.00 20.00 re
+B
+BT
+/F2 7.5 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 46.00 806.00 Tm
+(HIRESENSE AI SOURCE CODE: textExtractor.js) Tj
+ET
+BT
+/F1 6.5 Tf
+0.392 0.412 0.451 rg
+1 0 0 1 330.00 806.00 Tm
+(Vaibhav Srivastava \(Roll: 2400320101215\) • Mentor: Anshul Tickoo) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 780.00 Tm
+( 266 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 780.00 Tm
+(function analyzeResumeQuality\(text, extracted\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 770.00 Tm
+( 267 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 770.00 Tm
+(  const issues = [];) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 760.00 Tm
+( 268 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 760.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 750.00 Tm
+( 269 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 750.00 Tm
+(  // Check 1: Missing contact info) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 740.00 Tm
+( 270 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 740.00 Tm
+(  if \(!extracted.email\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 730.00 Tm
+( 271 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 730.00 Tm
+(    issues.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 720.00 Tm
+( 272 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 720.00 Tm
+(      type: 'missing_section',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 710.00 Tm
+( 273 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 710.00 Tm
+(      severity: 'medium',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 700.00 Tm
+( 274 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 700.00 Tm
+(      description: 'No valid email address was detected on the resume.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 690.00 Tm
+( 275 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 690.00 Tm
+(      suggestion: 'Ensure email address is prominently placed in the header section.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 680.00 Tm
+( 276 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 680.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 670.00 Tm
+( 277 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 670.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 660.00 Tm
+( 278 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 660.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 650.00 Tm
+( 279 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 650.00 Tm
+(  if \(!extracted.phone\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 640.00 Tm
+( 280 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 640.00 Tm
+(    issues.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 630.00 Tm
+( 281 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 630.00 Tm
+(      type: 'missing_section',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 620.00 Tm
+( 282 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 620.00 Tm
+(      severity: 'low',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 610.00 Tm
+( 283 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 610.00 Tm
+(      description: 'No phone number was detected.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 600.00 Tm
+( 284 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 600.00 Tm
+(      suggestion: 'Include direct phone contact for recruiter outreach.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 590.00 Tm
+( 285 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 590.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 580.00 Tm
+( 286 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 580.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 570.00 Tm
+( 287 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 570.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 560.00 Tm
+( 288 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 560.00 Tm
+(  // Check 2: Content depth) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 550.00 Tm
+( 289 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 550.00 Tm
+(  if \(text.length < 500\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 540.00 Tm
+( 290 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 540.00 Tm
+(    issues.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 530.00 Tm
+( 291 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 530.00 Tm
+(      type: 'formatting_warning',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 520.00 Tm
+( 292 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 520.00 Tm
+(      severity: 'high',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 510.00 Tm
+( 293 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 510.00 Tm
+(      description: 'Resume is unusually brief \(under 100 words\), limiting screening accu) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 500.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 500.00 Tm
+(racy.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 490.00 Tm
+( 294 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 490.00 Tm
+(      suggestion: 'Provide detailed descriptions of responsibilities, technical stacks, ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 480.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 480.00 Tm
+(and measurable outcomes.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 470.00 Tm
+( 295 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 470.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 460.00 Tm
+( 296 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 460.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 450.00 Tm
+( 297 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 450.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 440.00 Tm
+( 298 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.431 0.510 0.471 rg
+1 0 0 1 74.00 440.00 Tm
+(  // Check 3: Check for vague skill descriptions) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 430.00 Tm
+( 299 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 430.00 Tm
+(  if \(!text.toLowerCase\(\).includes\('skills'\) && !text.toLowerCase\(\).includes\('technical ) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 420.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 420.00 Tm
+(competencies'\)\) {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 410.00 Tm
+( 300 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 410.00 Tm
+(    issues.push\({) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 400.00 Tm
+( 301 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 400.00 Tm
+(      type: 'unclear_skill_description',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 390.00 Tm
+( 302 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 390.00 Tm
+(      severity: 'low',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 380.00 Tm
+( 303 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 380.00 Tm
+(      description: 'No dedicated "Skills" or "Core Competencies" section header detected) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 370.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 370.00 Tm
+(.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 360.00 Tm
+( 304 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 360.00 Tm
+(      suggestion: 'Group key technical and leadership competencies under a dedicated hea) Tj
+ET
+BT
+/F3 6.5 Tf
+0.706 0.725 0.765 rg
+1 0 0 1 40.00 350.00 Tm
+(     > ) Tj
+ET
+BT
+/F3 7 Tf
+0.196 0.216 0.255 rg
+1 0 0 1 74.00 350.00 Tm
+(der.',) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 340.00 Tm
+( 305 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 340.00 Tm
+(    }\);) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 330.00 Tm
+( 306 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 330.00 Tm
+(  }) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 320.00 Tm
+( 307 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 320.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 310.00 Tm
+( 308 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.071 0.373 0.294 rg
+1 0 0 1 74.00 310.00 Tm
+(  return issues;) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 300.00 Tm
+( 309 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 300.00 Tm
+(}) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 290.00 Tm
+( 310 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 290.00 Tm
+() Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 280.00 Tm
+( 311 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 280.00 Tm
+(module.exports = {) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 270.00 Tm
+( 312 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 270.00 Tm
+(  extractRawText,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 260.00 Tm
+( 313 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 260.00 Tm
+(  parseResumeEntities,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 250.00 Tm
+( 314 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 250.00 Tm
+(  calculateFileHash,) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 240.00 Tm
+( 315 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 240.00 Tm
+(};) Tj
+ET
+BT
+/F4 7 Tf
+0.549 0.569 0.608 rg
+1 0 0 1 40.00 230.00 Tm
+( 316 | ) Tj
+ET
+BT
+/F3 7 Tf
+0.090 0.102 0.129 rg
+1 0 0 1 74.00 230.00 Tm
+() Tj
+ET
+0.7 w
+0.886 0.894 0.871 RG
+40.00 36.00 m
+555.00 36.00 l
+S
+BT
+/F1 7 Tf
+0.471 0.490 0.529 rg
+1 0 0 1 40.00 24.00 Tm
+(HireSense AI • Explainable Resume Intelligence Platform \(HCL Capstone Project\)) Tj
+ET
+BT
+/F2 7 Tf
+0.090 0.420 0.322 rg
+1 0 0 1 505.00 24.00 Tm
+(Page 5 of 5) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 5 0 R >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R >>
+endobj
+12 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 7 0 R >>
+endobj
+13 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 8 0 R >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R >>
+endobj
+15 0 obj
+<< /Type /Pages /Kids [10 0 R 11 0 R 12 0 R 13 0 R 14 0 R] /Count 5 >>
+endobj
+16 0 obj
+<< /Type /Catalog /Pages 15 0 R >>
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000019 00000 n 
+0000000116 00000 n 
+0000000218 00000 n 
+0000000313 00000 n 
+0000000413 00000 n 
+0000012565 00000 n 
+0000026276 00000 n 
+0000038776 00000 n 
+0000051592 00000 n 
+0000061536 00000 n 
+0000061700 00000 n 
+0000061864 00000 n 
+0000062028 00000 n 
+0000062192 00000 n 
+0000062356 00000 n 
+0000062443 00000 n 
+trailer
+<< /Size 17 /Root 16 0 R >>
+startxref
+62494
+%%EOF
